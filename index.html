@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <title>Funeraria CACHA</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <header class="hidden-sm-down col-md-10 d-flex ml-auto">
+                <!-- BARRA HORIZONTAL -->
+                <div class="col-md-5 title_header">
+                    <h5 class="title_header">Inicio <i class="fa fa-home"></i></h5>
+                </div>
+                <!-- <div class="boxl"> </div>  -->
+               <!--  <div class="boxr"> </div> -->
+
+                <div class="col-md-5 d-flex ml-auto justify-content-around">
+                    <!-- notificaciones -->
+                    <a href="#" class="notificacion dropdown-toggle" id="notificacion" data-toggle="dropdown"><i class="fa fa-bell"></i> <small> 5 <span class="hidden-md-down">Notificaciones</span> </small> </a>
+                        <div class="dropdown-menu" aria-labelledby="notificacion">
+                            <h6 class="dropdown-header"><b>Cobros del Dia</b></h6>
+                            <a href="#" class="dropdown-item"><small>Pagado <span class="badge badge-pill badge-danger pull-right">3</span></small></a>
+                            <a href="#" class="dropdown-item"><small>No Pagado <span class="badge badge-pill badge-danger pull-right">1</span></small></a>
+                            <a href="#" class="dropdown-item"><small>Cambio Fecha <span class="badge badge-pill badge-danger pull-right">1</span></small></a>
+                        </div>
+                    <h6><span class="hidden-md-down">Buenos Dias,</span> Mr. Magnus Cartwright</h6>
+                    <a href="#" class="salir" data-toggle="tooltip" data-placement="bottom" title="Cerrar Sesión"><i class="fa fa-power-off"></i></a>
+                </div>
+            </header>
+            <!-- ENCABEZADO DE LA BARRA VERTICAL-->
+            <div class="barra-lateral col-md-2 col-sm-12" id="barra-lateral">
+                <div class="logo d-flex" id="logo">
+                    <img src="img/Firefox_48px.png" alt="logo" >
+                    <h6>Funeraria CACHA</h6>
+                    <a href="#" class="hidden-md-up mr-3"><i class="fa fa-2x fa-bars"></i></a>
+                </div>
+            <!-- CERRARA SESION DESDE LA CABECERA -->
+                <div class="menu-second d-flex hidden-md-up">
+                    <h6 class="mr-auto"><i class="fa fa-user-circle"></i> Mr. Magnus Cartwright</h6>
+                    <a href="#" class="mr-3"><i class="fa fa-power-off"></i> Salir</a>
+                </div>
+            <!-- MENU DE LA BARRA VERTICAL -->
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap hidden-sm-down" id="acordion" role="tablist" aria-multiselectable="true">
+                    <a href=""><i class="fa fa-dashboard hidden-md-down"></i>Dashboard</a>
+                    <a href="#inicio" id="btnInicio" aria-expanded="false" aria-controls="inicio" data-toggle="collapse"><i class="fa fa-home hidden-md-down"></i>Inicio<i id="flecha_izq" class="fa fa-angle-right pull-right"></i></a>
+                        <div class="collapse" id="inicio">
+                            <ul>
+                                <a href=""><i class="fa fa-circle-o"></i>Opción 1</a>
+                                <a href=""><i class="fa fa-circle-o"></i>Opción 2</a>
+                                <a href=""><i class="fa fa-circle-o"></i>Opción 3</a>
+                            </ul>
+                        </div>
+                    <a href="#ubicacion" id="btnUbicacion" aria-expanded="false" aria-controls="ubicacion" data-toggle="collapse"><i class="fa fa-map hidden-md-down"></i>Ubicacion<i id="flecha" class="fa fa-angle-right pull-right"></i></a>
+                    <div class="collapse" id="ubicacion">
+                        <ul>
+                            <a href=""><i class="fa fa-circle-o"></i>Opción 1</a>
+                            <a href=""><i class="fa fa-circle-o"></i>Opción 2</a>
+                            <a href=""><i class="fa fa-circle-o"></i>Opción 3</a>
+                        </ul>
+                    </div>
+                    <a href="#facturacion" id="btnfacturacion" aria-expanded="false" aria-controls="facturacion" data-toggle="collapse"><i class="fa fa-book hidden-md-down"></i>Facturacion<i id="flecha1" class="fa fa-angle-right pull-right"></i></a>
+                    <div class="collapse" id="facturacion">
+                        <ul>
+                            <a href=""><i class="fa fa-circle-o"></i>Opción 1</a>
+                            <a href=""><i class="fa fa-circle-o"></i>Opción 2</a>
+                            <a href=""><i class="fa fa-circle-o"></i>Opción 3</a>
+                        </ul>
+                    </div>
+                    <a href=""><i class="fa fa-users hidden-md-down"></i>Empleados</a>
+                    <a href=""><i class="fa fa-question hidden-md-down"></i> Ayuda <span class="badge badge-danger pull-right">PDF</span></a>
+                </nav>
+                
+            </div>
+
+            <!-- CONTENIDO-->
+            <section class="col-md-10 col-sm-12 d-flex ml-auto">
+                <div class="contenido mt-4 ml-2 mr-4 mb-4" id="contenido">
+                <!-- ENCABEZADO -->
+                   <div class="contenido-encabezado bg-primary d-flex" id="contenido-enc">
+                       <h5 class="titulo">Opcion 1</h5>
+                    <!-- Boton nuevo -->
+                       <button class="btn-new" data-toggle="modal" data-target="#btn-new"><i class="fa fa-plus-circle"></i> Nuevo</button>
+                       <!-- Modal del Nuevo -->
+                        <div class="modal fade" id="btn-new" tabindex="-1" role="dialog" aria-labelledby="btn-new" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Nueva Opcion 1</h5>
+                                        <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="nombre">Nombre: </label>
+                                                <input type="text" class="form-control" placeholder="Nombre">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="fecha">Fecha: </label>
+                                                <input type="date"  class="form-control">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success">Aceptar</button>
+                                        <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                         <!-- buscador -->
+                         <div class="buscador d-flex ml-auto hidden-md-down">
+                             <label for="">Buscar por: </label>
+                             <select name="filtro" id="" class="">
+                                 <option value="nombre">Nombre</option>
+                                 <option value="descripcion">Descripción</option>
+                             </select>
+                            <input type="text" name="buscar" id="buscar" class="buscar" placeholder="Buscar...">
+                            <div class="icon-buscar">
+                                <i class="fa fa-search hidden-md-down"></i>
+                            </div> 
+                         </div>
+
+                   </div>
+
+                   <!-- CUERPO -->
+                   <div class="cuerpo-contenido">
+                       <div class="table-responsive tabla-contenido">
+                           <div class="form-inline">
+                               <!-- Buscar  -->
+                               <label for="buscar" class="hidden-lg-up mb-3 mt-2 ml-1">Buscar por: </label>
+                               <select name="" id="" class="custom-select hidden-lg-up mb-3 ml-1 w-25">
+                                   <option value="nombre">Nombre</option>
+                                   <option value="descripcion">Descripción</option>
+                               </select>
+                               <input type="text" name="buscar" id="buscar" class="form-control hidden-lg-up mb-3 ml-1 w-50" placeholder="Buscar...">
+                           </div>
+                           <!-- TABLA -->
+                           <table class="tablesorter table table-striped table-hover table-sm" width="100%" id="tabla">
+                               <thead class="enc-tabla">
+                                   <tr>
+                                       <th>Opciones</th>
+                                       <th>Nombre</th>
+                                       <th>Descripción</th>
+                                       <th>Estado</th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr>
+                                    <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-remove"></i></button></td>
+                                       <td>Lucie Marvin</td>
+                                       <td>Trantow Road 39375 Mariah Burgs</td>
+                                       <td>Activo</td>
+                                   </tr>
+                                   <tr>
+                                       <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
+                                       <td>Katelyn Grady</td>
+                                       <td>Champlin Forges, 07420 Gerardo Parkway</td>
+                                       <td>Activo</td>
+                                   </tr>
+                                   <tr>
+                                       <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
+                                       <td>Amanda Kihn</td>
+                                       <td>Terry Mountain, 58681 Hackett Greens</td>
+                                       <td>Activo</td>
+                                   </tr>
+                                   <tr>
+                                       <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
+                                       <td>Miss Alejandrin Nikolaus</td>
+                                       <td>Bettye Plaza, 6568 Ned Square</td>
+                                       <td>Inactivo</td>
+                                   </tr>
+                                   <tr>
+                                        <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
+                                        <td>Emery Sporer IV</td>
+                                        <td>Senger Ports, 8047 Gulgowski Estates</td>
+                                        <td>Inactivo</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
+                                        <td>Cara Brekke</td>
+                                        <td>Rathton,1560 Mohr Motorway</td>
+                                        <td>Activo</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
+                                        <td>Charity Kohler</td>
+                                        <td>Port Ella, 24495 Fahey Centers</td>
+                                        <td>Inactivo</td>
+                                    </tr>
+                               </tbody>
+                           </table>
+                       </div>
+
+                       <!-- PAGINACION -->
+                       <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item"><a href="#" class="page-link"><span>&laquo;</span> Ant</a></li>
+                            <li class="page-item"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">Sig <span>&raquo;</span></a></li>
+                        </ul>
+                       </nav>
+                   </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <!-- <script src="js/jquery-ui.js"></script> -->
+    <script src="js/application.js"></script>
+</body>
+</html>
