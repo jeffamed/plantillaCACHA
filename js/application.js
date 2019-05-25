@@ -53,6 +53,13 @@ $(document).ready(function(){
 // Funcionamiento del tooltip de bootstrap
    $('[data-toggle="tooltip"]').tooltip();
 
+   // Graficos
+ 
+
+});
+
+
+
    // Funcionamiento de la Fecha Datepicker
    // cambio de idioma
    // $.datepicker.regional['es']={
@@ -82,4 +89,3 @@ $(document).ready(function(){
    //    // buttonImage: "css/images/calendar.gif",
    //    // buttonImageOnly: true
    // );
-});

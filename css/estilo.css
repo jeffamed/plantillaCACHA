@@ -9,7 +9,6 @@
 }
 
 body {
-  height: 100%;
   background: #ecf0f5;
   font-size: 16px;
   font-family: sans-serif, Arial, Helvetica;
@@ -297,12 +296,30 @@ section .contenido .tabla-contenido {
 section .dashboard {
   width: 250px;
   height: 15vh;
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 2.5px;
+  margin-left: 0px;
 }
 
 section .dashboard .dbicon, section .dashboard .dbcontenido {
   color: white;
   text-align: center;
+}
+
+section .caja {
+  background-color: white;
+  padding: 10px;
+}
+
+section .barravr {
+  border-right: 3px solid #ecf0f5;
+  border-bottom: 1.5px solid #ecf0f5;
+}
+
+section .barravl {
+  border-top: 1.5px solid #ecf0f5;
+  border-left: 3px solid #ecf0f5;
 }
 
 @media screen and (max-width: 576px) {

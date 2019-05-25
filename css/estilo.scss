@@ -13,7 +13,7 @@ $grisp: #d3d3d3;$grisAdmin: rgb(236,240,245);
 }
 
 body{
-    height: 100%;
+    // max-height: calc(100% - 25%);
     background: $grisAdmin;
     font-size: 16px;
     font-family: sans-serif, Arial, Helvetica;
@@ -302,10 +302,15 @@ section{
         }
     }
     //------------------- DASHBOARD--------------------
+    // ETIQUETAS
     .dashboard{
         width: 250px;
         height: 15vh;
-        margin: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 2.5px;
+        margin-left: 0px;
+        // background: #d62b2be7
         // position: relative;
         
         .dbicon, .dbcontenido{
@@ -313,6 +318,21 @@ section{
             text-align: center;
         }
         
+    }
+
+    // GRAFICOS
+    .caja{
+        background-color: white;
+        padding: 10px;
+        // box-shadow: 2px 2px 10px 0px black;
+    }
+    .barravr{
+        border-right: 3px solid $grisAdmin;
+        border-bottom: 1.5px solid $grisAdmin;
+    }
+    .barravl{
+        border-top: 1.5px solid $grisAdmin;
+        border-left: 3px solid $grisAdmin;
     }
 
 }
