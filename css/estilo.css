@@ -35,6 +35,7 @@ body {
 .barra-lateral .logo {
   margin: 10px 10px;
   border-bottom: 1px solid white;
+  font-family: inherit;
 }
 
 .barra-lateral .logo h6 {
@@ -53,6 +54,7 @@ body {
 .barra-lateral .logo a {
   margin: auto 0px;
   text-decoration: none;
+  font-family: inherit;
 }
 
 .barra-lateral .logo a:hover {
@@ -261,6 +263,31 @@ section .contenido .cuerpo-contenido .enc-tabla {
 
 section .contenido .cuerpo-contenido th, section .contenido .cuerpo-contenido td {
   border: 1px solid #7c7c7c;
+  font-size: 14px;
+}
+
+section .contenido .cuerpo-contenido .btn-edit, section .contenido .cuerpo-contenido .btn-eliminar {
+  padding: 5px 15px;
+  color: #ffffff;
+  border-radius: 2.5px;
+}
+
+section .contenido .cuerpo-contenido .btn-edit {
+  border: none;
+  background: #ffa600;
+}
+
+section .contenido .cuerpo-contenido .btn-edit:hover {
+  background: #da920d;
+}
+
+section .contenido .cuerpo-contenido .btn-eliminar {
+  border: none;
+  background: #d12424;
+}
+
+section .contenido .cuerpo-contenido .btn-eliminar:hover {
+  background: #ff0101;
 }
 
 section .contenido .tabla-contenido {
