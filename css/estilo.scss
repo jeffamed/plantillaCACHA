@@ -175,13 +175,13 @@ header{
 
 section{
     min-height: 100%;
-    width: 100%;
+    width: 100vh;
     padding-top: 10px;
-    padding-bottom: 2%;
+    // padding-bottom: 2%;
     background: $grisAdmin;
     // background: #fff;
 
-    // Contenido del centro
+    // Contenido del centro del index
 
     .contenido{
         background-color: #ffffff;
@@ -301,8 +301,39 @@ section{
             
         }
     }
+    //------------------- DASHBOARD--------------------
+    .dashboard{
+        width: 250px;
+        height: 15vh;
+        margin: 5px;
+        // position: relative;
+        
+        .dbicon, .dbcontenido{
+            color: white;
+            text-align: center;
+        }
+        
+    }
+
 }
-// // DatePicker Mejorando Estilo
+
+// media queries
+
+@media screen and (max-width: $sm){
+    .barra-lateral{
+        min-height: auto;
+        position: relative;
+    }
+}
+@media screen and (max-width: 767px){
+    .barra-lateral{
+        min-height: auto;
+        position: relative;
+    }
+
+}
+
+// DatePicker Mejorando Estilo
 
 // // div principal del datepicker
 // .ui-datepicker{
@@ -333,20 +364,3 @@ section{
 //         color: #ffffff;
 //     }
 // }
-
-// media queries
-
-@media screen and (max-width: $sm){
-    .barra-lateral{
-        min-height: auto;
-        position: relative;
-    }
-}
-@media screen and (max-width: 767px){
-    .barra-lateral{
-        min-height: auto;
-        position: relative;
-    }
-}
-
-

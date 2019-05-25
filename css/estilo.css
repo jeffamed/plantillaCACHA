@@ -159,9 +159,8 @@ header .notificacion:hover {
 
 section {
   min-height: 100%;
-  width: 100%;
+  width: 100vh;
   padding-top: 10px;
-  padding-bottom: 2%;
   background: #ecf0f5;
 }
 
@@ -293,6 +292,17 @@ section .contenido .cuerpo-contenido .btn-eliminar:hover {
 section .contenido .tabla-contenido {
   font-size: 15px;
   padding: 10px 10px -5px 10px;
+}
+
+section .dashboard {
+  width: 250px;
+  height: 15vh;
+  margin: 5px;
+}
+
+section .dashboard .dbicon, section .dashboard .dbcontenido {
+  color: white;
+  text-align: center;
 }
 
 @media screen and (max-width: 576px) {
