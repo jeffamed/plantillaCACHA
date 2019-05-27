@@ -1,0 +1,169 @@
+@import "color_medida";
+
+section{
+    min-height: 100%;
+    width: 100vh;
+    padding-top: 10px;
+    // padding-bottom: 2%;
+    background: $grisAdmin;
+    // background: #fff;
+
+    // Contenido del centro del index
+
+    .contenido{
+        background-color: #ffffff;
+        box-shadow: 2px 2px 10px 0px black;
+
+        .contenido-encabezado{
+            // background: linear-gradient($negrob,rgb(85, 85, 85));
+            // background: $azulbajo;
+            width: 80vw;
+            height: 50px;
+            padding: 12px;            
+            .titulo{
+                color:  white;
+            }
+
+           .btn-new{
+               width: auto;
+               height: 30px;
+               padding: 2.5px 15px 10px 15px;
+               margin-left: 50px;
+               text-decoration: none;
+               color: #ffffff;
+               background: transparent;
+               border: 1px solid #fff;
+               border-radius: 2.5px;
+               &:hover{
+                   text-decoration: none;
+                   background: rgb(6, 99, 180);
+               }
+           }
+
+           select{
+                font-size: 16px;
+                color: rgb(255, 255, 255);
+                height: 30px;
+                border: 0.5px solid #f2f2f2;
+                border-right: none;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius:  5px;
+                background: transparent;
+                margin-right: 0px;
+                &:focus{
+                    outline: none;
+                }
+                option{
+                    color: #000;
+                }
+           }
+           label{
+               color: #f2f2f2;
+               font-size: 16px;
+               margin: auto 0px;
+               margin-right: 10px;
+           }
+           .buscar{
+               font-size: 16px;
+               height: 30px;
+               border: 0.5px solid #f2f2f2;
+               border-left: none;
+               border-bottom-right-radius: 5px;
+               border-top-right-radius: 5px;
+               background: transparent;
+               color: #fff;
+               padding-left: 10px;
+               padding-right: 28px;
+               &:focus{
+                outline: none;
+            }
+           }
+           .icon-buscar{
+               width: 30px;
+               height: 30px;
+               color: #f2f2f2;
+               padding: auto;
+               margin: auto 0;
+               margin-left: -25px;
+           }
+        }
+        .cuerpo-contenido{
+            width: 80vw;
+            height: auto;
+            border-top: 0px solid transparent;
+            // background: inherit;
+            // background: white;
+            .enc-tabla{
+                background: white;
+            }
+            th, td{
+                border: 1px solid rgb(124, 124, 124);
+                font-size: 14px;
+            }
+            .btn-edit, .btn-eliminar{
+                padding: 5px 15px;
+                color: #ffffff;
+                border-radius: 2.5px;
+            }
+
+            .btn-edit{
+                border: none;
+                background: rgb(255, 166, 0);
+                &:hover{
+                    background: rgb(218, 146, 13);
+                }
+            }
+            .btn-eliminar{
+                border: none;
+                background: rgb(209, 36, 36);
+                &:hover{
+                    background: rgb(255, 1, 1);
+                }
+            }
+        }
+
+        .tabla-contenido{
+            font-size: 15px;
+            padding: 10px 10px -5px 10px;
+            
+        }
+    }
+    //------------------- DASHBOARD--------------------
+    // ETIQUETAS
+    .dashboard{
+        width: 250px;
+        height: 15vh;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 2.5px;
+        margin-left: 0px;
+        // background: #d62b2be7
+        // position: relative;
+        
+        .dbicon, .dbcontenido{
+            color: white;
+            text-align: center;
+        }
+        
+    }
+
+    // GRAFICOS
+    .caja{
+        background-color: white;
+        padding: 5px;
+        // box-shadow: 2px 2px 10px 0px black;
+    }
+    .barravr{
+        border-right: 3px solid $grisAdmin;
+        // border-bottom: 1.5px solid $grisAdmin;
+    }
+    .barravl{
+        // border-top: 1.5px solid $grisAdmin;
+        border-left: 3px solid $grisAdmin;
+    }
+
+    .DBServicios{
+        height: 5px;
+    }
+
+}

@@ -1,0 +1,96 @@
+@import "color_medida";
+
+.barra-lateral{
+    font-family: Roboto;
+    background-image: linear-gradient(-45deg,$azulbajo,$azulenc);
+    color: #fff;
+    min-height: 100vh;
+    max-height: 100%;
+    padding: 0;
+    position: absolute;
+    a{
+        font-family: inherit;
+        color: #fff;
+    }
+    // LOGO
+    .logo{
+        margin: 10px 10px;
+        border-bottom: 1px solid white;
+        font-family: inherit;
+        h6{
+            padding: 15px 0;
+            text-align: center;
+            font-weight: 500;
+            margin: 0;
+        }
+        img{
+            float: left;
+            max-width: 45px;
+            max-height: 45px;
+        }
+        a{
+            margin: auto 0px;
+            text-decoration: none;
+            font-family: inherit;
+            &:hover{
+                text-decoration: none;
+                color: #295ef1;
+            }
+        }
+    }
+
+    // segundo menu del panel
+
+    .menu-second{
+        h6{
+            margin: auto 15px;
+            padding: 20px 0px;
+        }
+        a{
+            margin: auto;
+            text-decoration: none;
+            &:hover{
+                 text-decoration: none;
+                 color: rgb(199, 34, 34);
+            }
+        }
+    }
+    /*      MENU        */
+    .menu{
+        a{
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(255,255,255,.1);
+            text-decoration: none;
+            &:hover{
+                background: $azulenc;
+                color: white;
+                // border-bottom:2.5px solid #295ef1;
+                // border-left: 5px solid #3557b8;
+                border:0.5px solid whitesmoke;
+                text-decoration: none;
+                /* color: #35ae6b; */
+                /* border-bottom: 1px solid rgb(242,242,242); */
+            }
+            i{
+                margin-right: 10px;
+            }
+        }
+        ul{
+            a{
+                background: rgba(46,46,46,.5);
+                color: rgb(242,242,242);
+                padding-left: 40px;
+                transition: transform .01s;
+                &:hover{
+                    // color:#3160e2;
+                    border-bottom: 1px solid white;
+                    border-left: 2px solid white;
+                    transform: scale(.99);
+                }
+            }
+        }
+    }
+}

@@ -14,7 +14,6 @@ body {
   font-family: sans-serif, Arial, Helvetica;
 }
 
-/*   MENU   */
 .barra-lateral {
   font-family: Roboto;
   background-image: linear-gradient(-45deg, #599cff, #2c4eac);
@@ -309,23 +308,33 @@ section .dashboard .dbicon, section .dashboard .dbcontenido {
 
 section .caja {
   background-color: white;
-  padding: 10px;
+  padding: 5px;
 }
 
 section .barravr {
   border-right: 3px solid #ecf0f5;
-  border-bottom: 1.5px solid #ecf0f5;
 }
 
 section .barravl {
-  border-top: 1.5px solid #ecf0f5;
   border-left: 3px solid #ecf0f5;
+}
+
+section .DBServicios {
+  height: 5px;
 }
 
 @media screen and (max-width: 576px) {
   .barra-lateral {
     min-height: auto;
     position: relative;
+  }
+  .barravr {
+    border-right: 0px solid #ecf0f5;
+    border-bottom: 1.5px solid #ecf0f5;
+  }
+  .barravl {
+    border-left: 0px solid #ecf0f5;
+    border-top: 1.5px solid #ecf0f5;
   }
 }
 
@@ -334,5 +343,39 @@ section .barravl {
     min-height: auto;
     position: relative;
   }
+}
+
+.ui-datepicker {
+  width: 20%;
+  background: white;
+}
+
+.ui-datepicker table {
+  font-size: 12px;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  font-size: 14px;
+  background: white;
+  color: black;
+  border-bottom: 1px solid gray;
+}
+
+.ui-datepicker th {
+  color: black;
+}
+
+.ui-datepicker .ui-state-dafault {
+  background: black;
+}
+
+.ui-datepicker .ui-state-active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#439ae6), to(#0083f5));
+  background: linear-gradient(#439ae6, #0083f5);
+  color: #ffffff;
+}
+
+.ui-datepicker .ui-icon {
+  background-image: url("../img/datepicker/ui-icons_444444_256x240.png");
 }
 /*# sourceMappingURL=estilo.css.map */

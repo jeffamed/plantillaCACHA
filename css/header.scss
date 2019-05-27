@@ -1,0 +1,59 @@
+@import "color_medida";
+
+header{
+    height: 60px;
+    // background:linear-gradient(rgb(190, 190, 190),white);
+    background: #fff;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    position: absolute;
+    color:rgb(82, 82, 82);
+    z-index: 1;
+    h6{
+        margin: auto 0;
+        font-size: 14px;
+        // color: rgb(107, 106, 106);
+        color: inherit;
+    }
+    .title_header{
+        margin: auto 0;
+        // margin-left: 20px;
+    }
+    .salir{
+        margin: auto 10px;
+        color: inherit;
+        text-decoration: none;
+        &:hover{
+            color: rgb(202, 54, 54);
+            text-decoration: none;
+        }
+    }
+    .notificacion{
+        margin: auto 0px;
+        color: inherit;
+        text-decoration: none;
+        &:hover{
+            color: orange;
+            text-decoration: none;
+        }
+    }
+    // .boxl{
+    //     width: 0;
+    //     height: 0;
+    //     position: absolute;
+    //     top: 0px;
+    //     left: -40px;
+    //     // background: red;
+    //     border-left: 20px solid transparent;
+    //     border-top: 30px solid transparent;
+    //     border-right: 20px solid #fff;
+    //     border-bottom: 30px solid transparent;
+    // }
+    // .boxr{
+    //     width: 20px;
+    //     height: 20px;
+    //     position: absolute;
+    //     bottom: -1px;
+    //     right: 0px;
+    //     background: #ffffff;
+    // }
+}
