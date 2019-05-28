@@ -9,8 +9,9 @@
 }
 
 body {
+  height: 100vh;
   background: #ecf0f5;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: sans-serif, Arial, Helvetica;
 }
 
@@ -60,9 +61,13 @@ body {
   color: #295ef1;
 }
 
+.barra-lateral .menu-second {
+  margin: .5rem 0rem;
+}
+
 .barra-lateral .menu-second h6 {
-  margin: auto 15px;
-  padding: 20px 0px;
+  margin: auto 0.95rem;
+  padding: 0.32rem 0px;
 }
 
 .barra-lateral .menu-second a {
@@ -75,10 +80,25 @@ body {
   color: #c72222;
 }
 
+.barra-lateral .menu-second .notificacion {
+  margin: auto 0px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.barra-lateral .menu-second .notificacion:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+.barra-lateral .menu-second .dropdown-menu {
+  margin-left: 10rem;
+}
+
 .barra-lateral .menu a {
   display: block;
   width: 100%;
-  padding: 15px;
+  padding: 1rem;
   font-weight: 500;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   text-decoration: none;
@@ -403,7 +423,7 @@ section .DBServicios {
   }
   .barra-lateral nav .titulomenu2 {
     border-bottom: 1px solid gray;
-    padding: 10px;
+    padding: 0.625rem;
   }
   .barra-lateral nav.active {
     -webkit-transform: translatex(0%);
@@ -417,7 +437,7 @@ section .DBServicios {
 @media screen and (max-width: 575px) {
   .barra-lateral .menu a {
     display: inline-block;
-    padding: 20px 15px;
+    padding: 1.25rem 0.9375rem;
   }
   .ui-datepicker {
     width: 60%;

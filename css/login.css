@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(45deg, #599cff, #2c4eac);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.login {
+  width: 50%;
+  height: 50vh;
+  margin: auto;
+  padding: 25px;
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.login .formulario {
+  width: 60%;
+  height: 100%;
+}
+
+.login .formulario label {
+  margin-right: 25px;
+  width: 50%;
+}
+
+.login .formulario input[type=text], .login .formulario input[type=password] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid gray;
+  margin-bottom: 15px;
+  background: inherit;
+  font-size: 16px;
+  padding-left: 25px;
+}
+
+.login .formulario input[type=text]:focus, .login .formulario input[type=password]:focus {
+  border-bottom: 1px solid #599cff;
+}
+
+.login .formulario button {
+  margin: 5px 25%;
+  width: 10em;
+  height: 2.5em;
+  border: none;
+  background: #1aaa1a;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.login .formulario button:hover {
+  background: #0c860c;
+}
+
+.login .presentacion {
+  height: 100%;
+  width: 40%;
+  background-image: url("../img/5031763-landscape-island-nature-hd-4k-clouds.jpg");
+  background-size: cover;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.login .presentacion h4 {
+  margin: 20px 0px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.login .presentacion img {
+  margin-left: calc(100% / 3);
+}
+
+.login .presentacion h5 {
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.login h5 {
+  text-align: center;
+}
+
+.login .icon {
+  margin-right: -15px;
+}
+/*# sourceMappingURL=login.css.map */

@@ -42,9 +42,10 @@
     // segundo menu del panel
 
     .menu-second{
+        margin: .5rem 0rem;
         h6{
-            margin: auto 15px;
-            padding: 20px 0px;
+            margin: auto 0.95rem;
+            padding: 0.32rem 0px;
         }
         a{
             margin: auto;
@@ -54,13 +55,25 @@
                  color: rgb(199, 34, 34);
             }
         }
+        .notificacion{
+            margin: auto 0px;
+            color: inherit;
+            text-decoration: none;
+            &:hover{
+                color: orange;
+                text-decoration: none;
+            }
+        }
+        .dropdown-menu{
+            margin-left: 10rem;
+        }
     }
     /*      MENU        */
     .menu{
         a{
             display: block;
             width: 100%;
-            padding: 15px;
+            padding: 1rem;
             font-weight: 500;
             border-bottom: 1px solid rgba(255,255,255,.1);
             text-decoration: none;
@@ -89,4 +102,5 @@
             }
         }
     }
+    
 }
