@@ -11,8 +11,14 @@ $(function(){
 
       if(anchop<=767){
          $("#logo").addClass("justify-content-between");
+         $("#SectionCuerpo").removeClass("d-flex");
+         $("#cuerpo-contenido").addClass("w-100");
+         $("#pagination").removeClass("justify-content-end");
+         $("#pagination").addClass("justify-content-center");
       } else{
          $("#logo").removeClass("justify-content-between");
+         $("#pagination").removeClass("justify-content-center");
+         $("#pagination").addClass("justify-content-end");
       }
    });
 });
@@ -71,7 +77,7 @@ $(document).ready(function(){
       dayNamesShort: ['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'],
       dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
       weelHeader: 'Sm',
-      dateFormat: 'dd/mm/yy',
+      // dateFormat: 'dd/mm/yy',
       firstDay: 1,
       minDate: 0, // deshabilita los dias pasados
       showButtonPanel: true, //botones de hoy y cerrar
@@ -82,6 +88,9 @@ $(document).ready(function(){
    };
    
    $.datepicker.setDefaults($.datepicker.regional['es']);
-   $("#dpFecha").datepicker();
+   $("#dpFecha").datepicker({
+      dateFormat: 'dd/mm/yy',
+   }
+   );
 
 });

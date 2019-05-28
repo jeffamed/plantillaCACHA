@@ -1,27 +1,3 @@
-// lineas Servicios
-
-var ctx = document.getElementById('Servicios').getContext('2d');
-var chart = new Chart(ctx, {
-  type: 'line',
-  data :{
-     labels: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio'],
-     datasets: [{
-        label: 'Ventas del año',
-        backgroundColor: '#d62b2be7',
-        borderColor: 'rgb(255,99,132)',
-        data: [25,46,90,60,45,80,30]
-     }]
-  },
-  options: {
-      animation: {
-         easing: 'easeInCirc',
-         // Onprogress: function(animation) {
-         //    progress.value = animation.animationObject.currentStep /  animation.animationObject.numSteps;
-         // }
-      }
-  }
-});
-
   //Barra del Ventas
    var ctx = document.getElementById('Ventas').getContext('2d');
    var charVentas = new Chart(ctx, {
@@ -46,24 +22,24 @@ var chart = new Chart(ctx, {
              'rgba(75,192,192,.9)',
             ' rgba(153,102,255,.9)',
              'rgba(255,159,64,.9)'
-          ],
+            ],
           borderWidth: 1
        }]
-    },
+      },
     options:{
        scales: {
           yAxes:[{
              ticks:{
                 beginAtZero: true
-             }
+               }
           }]
-       }
+         }
     }
- });
+   });
 
- //piechart
- var ctx = document.getElementById('Vendedores').getContext('2d');
- var charVentas = new Chart(ctx, {
+   //piechart
+   var ctx = document.getElementById('Vendedores').getContext('2d');
+   var charVentas = new Chart(ctx, {
   type: 'pie',
   data:{
      labels: ['Dovie Schumm','Tyrell Pollich','Stan Crooks Jr.','Gwendolyn Toy','Elisha Considine'],
@@ -81,10 +57,10 @@ var chart = new Chart(ctx, {
            'rgba(255,100,132,1)',
            'rgba(54,170,235,1)',
            'rgba(75,200,192,1)',
-          ' rgba(153,110,255,1)',
+           ' rgba(153,110,255,1)',
            'rgba(255,170,64,1)'
         ],
-        borderWidth: 1
+      //   borderWidth: 1
      }]
   },
   options:{
@@ -94,4 +70,27 @@ var chart = new Chart(ctx, {
         text: 'Contratos Efectivos del Mes'
      }
   }
+});
+        // lineas Servicios
+        
+var ctx = document.getElementById('Servicios').getContext('2d');
+var chart = new Chart(ctx, {
+   type: 'line',
+   data :{
+      labels: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio'],
+      datasets: [{
+         label: 'Ventas del año',
+         backgroundColor: '#d62b2be7',
+         borderColor: 'rgb(255,99,132)',
+         data: [25,46,90,60,45,80,30]
+      }]
+   },
+   options: {
+      animation: {
+         easing: 'easeInCirc',
+         // Onprogress: function(animation) {
+         //    progress.value = animation.animationObject.currentStep /  animation.animationObject.numSteps;
+         // }
+      }
+   }
 });

@@ -1,7 +1,5 @@
 @import "color_medida";
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -24,8 +22,7 @@ body{
     @import "header";
     // Cuerpo o section
     @import "cuerpo";
-
-
+    
 // media queries
 
 @media screen and (max-width: $sm){
@@ -33,14 +30,7 @@ body{
         min-height: auto;
         position: relative;
     }
-    .barravr{
-        border-right: 0px solid $grisAdmin;
-        border-bottom: 1.5px solid $grisAdmin;
-    }
-    .barravl{
-        border-left: 0px solid $grisAdmin;
-        border-top: 1.5px solid $grisAdmin;
-    }
+
 }
 @media screen and (max-width: 767px){
     .barra-lateral{
@@ -51,7 +41,6 @@ body{
 }
 
 // DatePicker Mejorando Estilo
-
 // div principal del datepicker
 .ui-datepicker{
     width: 20%;

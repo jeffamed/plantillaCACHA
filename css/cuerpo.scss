@@ -125,21 +125,20 @@ section{
         .tabla-contenido{
             font-size: 15px;
             padding: 10px 10px -5px 10px;
-            
+        }
+
+        .modal-body{
+            label{
+                color: black;
+            }
         }
     }
     //------------------- DASHBOARD--------------------
     // ETIQUETAS
     .dashboard{
-        width: 250px;
+        width: 240px;
         height: 15vh;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-right: 2.5px;
-        margin-left: 0px;
-        // background: #d62b2be7
-        // position: relative;
-        
+
         .dbicon, .dbcontenido{
             color: white;
             text-align: center;

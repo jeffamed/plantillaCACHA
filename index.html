@@ -14,8 +14,8 @@
 <body>
     <div class="container-fluid">
         <div class="row">
+            <!-- BARRA HORIZONTAL -->
             <header class="hidden-sm-down col-md-10 d-flex ml-auto">
-                <!-- BARRA HORIZONTAL -->
                 <div class="col-md-5 title_header">
                     <h5 class="title_header">Inicio <i class="fa fa-home"></i></h5>
                 </div>
@@ -48,7 +48,7 @@
                     <a href="#" class="mr-3"><i class="fa fa-power-off"></i> Salir</a>
                 </div>
             <!-- MENU DE LA BARRA VERTICAL -->
-                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap hidden-sm-down" id="acordion" role="tablist" aria-multiselectable="true">
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap" id="acordion" role="tablist" aria-multiselectable="true">
                     <a href="dashboard.html"><i class="fa fa-dashboard hidden-md-down"></i>Dashboard</a>
                     <a href="#inicio" id="btnInicio" aria-expanded="false" aria-controls="inicio" data-toggle="collapse"><i class="fa fa-home hidden-md-down"></i>Inicio<i id="flecha_izq" class="fa fa-angle-right pull-right"></i></a>
                         <div class="collapse" id="inicio">
@@ -81,10 +81,10 @@
             </div>
 
             <!-- CONTENIDO-->
-            <section class="col-md-10 col-sm-12 d-flex ml-auto">
+            <section class="col-md-10 col-sm-12 d-flex ml-auto" id="SectionCuerpo">
                 <div class="contenido mt-4 ml-2 mr-4 mb-4" id="contenido">
                 <!-- ENCABEZADO -->
-                   <div class="contenido-encabezado bg-primary d-flex" id="contenido-enc">
+                   <div class="contenido-encabezado bg-primary d-flex w-100" id="contenido-enc">
                        <h5 class="titulo">Opcion 1</h5>
                     <!-- Boton nuevo -->
                        <button class="btn-new" data-toggle="modal" data-target="#btn-new"><i class="fa fa-plus-circle"></i> Nuevo</button>
@@ -93,7 +93,7 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Nueva Opcion 1</h5>
+                                        <h5 class="modal-title">Agregar Opcion 1</h5>
                                         <button class="close" data-dismiss="modal" aria-label="Cerrar">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -102,11 +102,11 @@
                                         <form action="">
                                             <div class="form-group">
                                                 <label for="nombre">Nombre: </label>
-                                                <input type="text" class="form-control" placeholder="Nombre">
+                                                <input type="text" class="form-control" placeholder="Nombre...">
                                             </div>
                                             <div class="form-group">
                                                 <label for="fecha">Fecha: </label>
-                                                <input type="text"  class="form-control" id="dpFecha">
+                                                <input type="text"  class="form-control" id="dpFecha" placeholder="dd/mm/yyyy">
                                             </div>
                                         </form>
                                     </div>
@@ -133,19 +133,20 @@
                    </div>
 
                    <!-- CUERPO -->
-                   <div class="cuerpo-contenido">
+                   <div class="cuerpo-contenido" id="cuerpo-contenido">
                        <div class="table-responsive tabla-contenido">
-                           <div class="form-inline">
-                               <!-- Buscar  -->
-                               <label for="buscar" class="hidden-lg-up mb-3 mt-2 ml-1">Buscar por: </label>
-                               <select name="" id="" class="custom-select hidden-lg-up mb-3 ml-1 w-25">
+                           <!-- Buscar  -->
+                           <div class="form-inline mt-2 mb-2">
+                               <label for="buscar" class="hidden-lg-up ml-1">Buscar por: </label>
+                               <select name="" id="" class="custom-select hidden-lg-up mr-1 w-25">
                                    <option value="nombre">Nombre</option>
                                    <option value="descripcion">Descripción</option>
                                </select>
-                               <input type="text" name="buscar" id="buscar" class="form-control hidden-lg-up mb-3 ml-1 w-50" placeholder="Buscar...">
+                               <input type="text" name="buscar" id="buscar" class="form-control hidden-lg-up w-50" placeholder="Buscar...">
                            </div>
+                           
                            <!-- TABLA -->
-                           <table class="tablesorter table table-striped table-hover table-sm" width="100%" id="tabla">
+                           <table class="tablesorter table table-striped table-hover table-sm" id="tabla">
                                <thead class="enc-tabla">
                                    <tr>
                                        <th>Opciones</th>
@@ -203,7 +204,7 @@
 
                        <!-- PAGINACION -->
                        <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end">
+                        <ul class="pagination justify-content-end" id="pagination">
                             <li class="page-item"><a href="#" class="page-link"><span>&laquo;</span> Ant</a></li>
                             <li class="page-item"><a href="#" class="page-link">1</a></li>
                             <li class="page-item"><a href="#" class="page-link">2</a></li>
