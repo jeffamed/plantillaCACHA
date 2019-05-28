@@ -342,6 +342,7 @@ section .DBServicios {
 }
 
 .ui-datepicker .ui-state-dafault {
+  text-align: center;
   background: black;
 }
 
@@ -359,6 +360,9 @@ section .DBServicios {
   .barra-lateral {
     min-height: auto;
     position: relative;
+  }
+  .ui-datepicker {
+    width: 60%;
   }
 }
 
@@ -405,12 +409,18 @@ section .DBServicios {
     -webkit-transform: translatex(0%);
             transform: translatex(0%);
   }
+  .ui-datepicker {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 575px) {
   .barra-lateral .menu a {
     display: inline-block;
     padding: 20px 15px;
+  }
+  .ui-datepicker {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

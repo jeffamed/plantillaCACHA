@@ -19,6 +19,7 @@
 }
 
 .ui-datepicker .ui-state-dafault {
+  text-align: center;
   background: black;
 }
 

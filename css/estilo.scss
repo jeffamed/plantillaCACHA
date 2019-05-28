@@ -32,6 +32,9 @@ body{
         min-height: auto;
         position: relative;
     }
+    .ui-datepicker{
+        width: 60%;
+    }
 }
 @media screen and (max-width: 767px){
     .barra-lateral{
@@ -76,6 +79,9 @@ body{
             transform: translatex(0%);
         }
     }
+    .ui-datepicker{
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 575px){
@@ -86,5 +92,8 @@ body{
                 padding: 20px 15px;
             }
         }
+    }
+    .ui-datepicker{
+        width: 60%;
     }
 }
