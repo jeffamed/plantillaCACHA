@@ -21,6 +21,23 @@ $(function(){
          $("#pagination").addClass("justify-content-end");
       }
    });
+
+   // MENU RESPONSIVE
+   var boton = $('#btnMenu');
+   var fondo = $('#fondoEnlace');
+
+   boton.on('click', function(e){
+      fondo.toggleClass('active');
+      $('nav').toggleClass('active');
+      e.preventDefault();
+   });
+
+   fondo.on('click', function(e){
+      fondo.toggleClass('active');
+      $('nav').toggleClass('active');
+      e.preventDefault();
+   });
+
 });
 
 $(document).ready(function(){
