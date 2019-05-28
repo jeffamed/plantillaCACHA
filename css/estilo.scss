@@ -22,6 +22,8 @@ body{
     @import "header";
     // Cuerpo o section
     @import "cuerpo";
+    //datepicker calendario de js
+    @import "datepicker";
     
 // media queries
 
@@ -65,47 +67,24 @@ body{
             transform: translatex(-100%);
             transition: all .3s ease;
             overflow: scroll;
+            .titulomenu2{
+                border-bottom: 1px solid gray;
+                padding: 10px;
+            }
         }
         nav.active{
             transform: translatex(0%);
         }
     }
-
 }
 
-// DatePicker Mejorando Estilo
-// div principal del datepicker
-.ui-datepicker{
-    width: 20%;
-    // background: rgb(67, 154, 230);
-    background: white;
-// tabla de los dias del mes
-    table{
-        font-size: 12px;
-    }
-    // la cabecera
-    .ui-datepicker-header{
-        font-size: 14px;
-        background: white;
-        color: black;
-        border-bottom: 1px solid gray;
-    }
-    // para los dias de la semana: sa dom lu
-    th{
-        color: black;
-    }
-    // para item con los dias del mes por defecto
-    .ui-state-dafault{
-        background: black;
-    }
-    // para item con los dias del mes seleccionado
-    .ui-state-active{
-        background: linear-gradient(rgb(67, 154, 230),rgb(0, 131, 245));
-        color: #ffffff;
-    }
-
-    .ui-icon {
-        background-image: url("../img/datepicker/ui-icons_444444_256x240.png");
+@media screen and (max-width: 575px){
+    .barra-lateral{
+        .menu{
+            a{
+                display: inline-block;
+                padding: 20px 15px;
+            }
+        }
     }
 }
-

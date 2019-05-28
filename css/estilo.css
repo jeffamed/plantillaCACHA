@@ -89,8 +89,6 @@ body {
   color: white;
   border: 0.5px solid whitesmoke;
   text-decoration: none;
-  /* color: #35ae6b; */
-  /* border-bottom: 1px solid rgb(242,242,242); */
 }
 
 .barra-lateral .menu a i {
@@ -323,6 +321,40 @@ section .DBServicios {
   height: 5px;
 }
 
+.ui-datepicker {
+  width: 20%;
+  background: white;
+}
+
+.ui-datepicker table {
+  font-size: 12px;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  font-size: 14px;
+  background: white;
+  color: black;
+  border-bottom: 1px solid gray;
+}
+
+.ui-datepicker th {
+  color: black;
+}
+
+.ui-datepicker .ui-state-dafault {
+  background: black;
+}
+
+.ui-datepicker .ui-state-active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#439ae6), to(#0083f5));
+  background: linear-gradient(#439ae6, #0083f5);
+  color: #ffffff;
+}
+
+.ui-datepicker .ui-icon {
+  background-image: url("../img/datepicker/ui-icons_444444_256x240.png");
+}
+
 @media screen and (max-width: 576px) {
   .barra-lateral {
     min-height: auto;
@@ -365,43 +397,20 @@ section .DBServicios {
     transition: all .3s ease;
     overflow: scroll;
   }
+  .barra-lateral nav .titulomenu2 {
+    border-bottom: 1px solid gray;
+    padding: 10px;
+  }
   .barra-lateral nav.active {
     -webkit-transform: translatex(0%);
             transform: translatex(0%);
   }
 }
 
-.ui-datepicker {
-  width: 20%;
-  background: white;
-}
-
-.ui-datepicker table {
-  font-size: 12px;
-}
-
-.ui-datepicker .ui-datepicker-header {
-  font-size: 14px;
-  background: white;
-  color: black;
-  border-bottom: 1px solid gray;
-}
-
-.ui-datepicker th {
-  color: black;
-}
-
-.ui-datepicker .ui-state-dafault {
-  background: black;
-}
-
-.ui-datepicker .ui-state-active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#439ae6), to(#0083f5));
-  background: linear-gradient(#439ae6, #0083f5);
-  color: #ffffff;
-}
-
-.ui-datepicker .ui-icon {
-  background-image: url("../img/datepicker/ui-icons_444444_256x240.png");
+@media screen and (max-width: 575px) {
+  .barra-lateral .menu a {
+    display: inline-block;
+    padding: 20px 15px;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */

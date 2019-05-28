@@ -49,33 +49,64 @@
                 </div>
             <!-- MENU DE LA BARRA VERTICAL -->
                 <nav class="menu d-flex d-sm-block justify-content-center flex-wrap" id="acordion" role="tablist" aria-multiselectable="true">
-                    <a href="dashboard.html"><i class="fa fa-dashboard hidden-md-down"></i>Dashboard</a>
-                    <a href="#inicio" id="btnInicio" aria-expanded="false" aria-controls="inicio" data-toggle="collapse"><i class="fa fa-home hidden-md-down"></i>Inicio<i id="flecha_izq" class="fa fa-angle-right pull-right"></i></a>
+
+                    <h5 class="hidden-md-up w-100 d-flex justify-content-center titulomenu2">MENU</h5>
+
+                    <a href="dashboard.html">
+                        <i class="fa fa-dashboard hidden-md-down"></i>
+                        <i class="fa fa-dashboard hidden-md-up"></i>
+                        Dashboard
+                    </a>
+                    <a href="#inicio" id="btnInicio" aria-expanded="false" aria-controls="inicio" data-toggle="collapse">
+                        <i class="fa fa-home hidden-md-down"></i>
+                        <i class="fa fa-home hidden-md-up"></i>
+                        Inicio
+                        <i id="flecha_izq" class="fa fa-angle-right pull-right"></i>
+                    </a>
                         <div class="collapse" id="inicio">
+                            <ul>
+                                <a href="index.html"><i class="fa fa-circle-o"></i>Opción 1</a>
+                                <a href=""><i class="fa fa-circle-o"></i>Opción 2</a>
+                                <a href=""><i class="fa fa-circle-o"></i>Opción 3</a>
+                            </ul>
+                        </div>
+                    <a href="#ubicacion" id="btnUbicacion" aria-expanded="false" aria-controls="ubicacion" data-toggle="collapse">
+                        <i class="fa fa-map hidden-md-down"></i>
+                        <i class="fa fa-map hidden-md-up"></i>
+                        Ubicacion
+                        <i id="flecha" class="fa fa-angle-right pull-right"></i>
+                    </a>
+                        <div class="collapse" id="ubicacion">
                             <ul>
                                 <a href=""><i class="fa fa-circle-o"></i>Opción 1</a>
                                 <a href=""><i class="fa fa-circle-o"></i>Opción 2</a>
                                 <a href=""><i class="fa fa-circle-o"></i>Opción 3</a>
                             </ul>
                         </div>
-                    <a href="#ubicacion" id="btnUbicacion" aria-expanded="false" aria-controls="ubicacion" data-toggle="collapse"><i class="fa fa-map hidden-md-down"></i>Ubicacion<i id="flecha" class="fa fa-angle-right pull-right"></i></a>
-                    <div class="collapse" id="ubicacion">
+                    <a href="#facturacion" id="btnfacturacion" aria-expanded="false" aria-controls="facturacion" data-toggle="collapse">
+                        <i class="fa fa-book hidden-md-down"></i>
+                        <i class="fa fa-book hidden-md-up"></i>
+                        Facturacion
+                        <i id="flecha1" class="fa fa-angle-right pull-right"></i>
+                    </a>
+                        <div class="collapse" id="facturacion">
                         <ul>
                             <a href=""><i class="fa fa-circle-o"></i>Opción 1</a>
                             <a href=""><i class="fa fa-circle-o"></i>Opción 2</a>
                             <a href=""><i class="fa fa-circle-o"></i>Opción 3</a>
                         </ul>
                     </div>
-                    <a href="#facturacion" id="btnfacturacion" aria-expanded="false" aria-controls="facturacion" data-toggle="collapse"><i class="fa fa-book hidden-md-down"></i>Facturacion<i id="flecha1" class="fa fa-angle-right pull-right"></i></a>
-                    <div class="collapse" id="facturacion">
-                        <ul>
-                            <a href=""><i class="fa fa-circle-o"></i>Opción 1</a>
-                            <a href=""><i class="fa fa-circle-o"></i>Opción 2</a>
-                            <a href=""><i class="fa fa-circle-o"></i>Opción 3</a>
-                        </ul>
-                    </div>
-                    <a href=""><i class="fa fa-users hidden-md-down"></i>Empleados</a>
-                    <a href=""><i class="fa fa-question hidden-md-down"></i> Ayuda <span class="badge badge-danger pull-right">PDF</span></a>
+                    <a href="#">
+                        <i class="fa fa-users hidden-md-down"></i>
+                        <i class="fa fa-users hidden-md-up"></i>
+                        Empleados
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-question hidden-md-down"></i> 
+                        <i class="fa fa-question hidden-md-up"></i> 
+                        Ayuda 
+                        <span class="badge badge-danger pull-right">PDF</span>
+                    </a>
                 </nav>
                 <a href="#" class="fondo-enlace hidden-lg-up" id="fondoEnlace"></a>
             </div>
@@ -138,13 +169,13 @@
                            <!-- Buscar  -->
                            <div class="form-inline mt-2 mb-2">
                                <label for="buscar" class="hidden-lg-up ml-1">Buscar por: </label>
-                               <select name="" id="" class="custom-select hidden-lg-up mr-1 w-25">
+                               <select name="" id="select-opciones" class="custom-select hidden-lg-up mb-1 mr-1 w-25">
                                    <option value="nombre">Nombre</option>
                                    <option value="descripcion">Descripción</option>
                                </select>
-                               <input type="text" name="buscar" id="buscar" class="form-control hidden-lg-up w-50" placeholder="Buscar...">
+                               <input type="text" name="buscar" id="txtbuscar" class="form-control hidden-lg-up mb-1 w-50" placeholder="Buscar...">
                            </div>
-                           
+
                            <!-- TABLA -->
                            <table class="tablesorter table table-striped table-hover table-sm" id="tabla">
                                <thead class="enc-tabla">
@@ -157,12 +188,15 @@
                                </thead>
                                <tbody>
                                    <tr>
-                                    <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-remove"></i></button></td>
-                                       <td>Lucie Marvin</td>
-                                       <td>Trantow Road 39375 Mariah Burgs</td>
-                                       <td>Activo</td>
-                                   </tr>
-                                   <tr>
+                                       <td>
+                                           <button class="btn-edit"><i class="fa fa-pencil"></i></button>
+                                           <button class="btn-eliminar"><i class="fa fa-remove"></i></button>
+                                        </td>
+                                        <td>Lucie Marvin</td>
+                                        <td>Trantow Road 39375 Mariah Burgs</td>
+                                        <td>Activo</td>
+                                    </tr>
+                                    <tr>
                                        <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
                                        <td>Katelyn Grady</td>
                                        <td>Champlin Forges, 07420 Gerardo Parkway</td>
@@ -174,6 +208,7 @@
                                        <td>Terry Mountain, 58681 Hackett Greens</td>
                                        <td>Activo</td>
                                    </tr>
+                                   
                                    <tr>
                                        <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
                                        <td>Miss Alejandrin Nikolaus</td>
