@@ -26,20 +26,17 @@ body{
     @import "datepicker";
     
 // media queries
-
-@media screen and (max-width: $sm){
+@media screen and (min-width: 768px){
     .barra-lateral{
-        min-height: auto;
-        position: relative;
-    }
-    .ui-datepicker{
-        width: 60%;
+        overflow: auto;
     }
 }
+
 @media screen and (max-width: 767px){
     .barra-lateral{
         min-height: auto;
         position: relative;
+        overflow: initial;
 
         .fondo-enlace{
             width: 100%;
@@ -93,6 +90,16 @@ body{
                 padding: 1.25rem 0.9375rem;
             }
         }
+    }
+    .ui-datepicker{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: $sm){
+    .barra-lateral{
+        min-height: auto;
+        position: relative;
     }
     .ui-datepicker{
         width: 60%;

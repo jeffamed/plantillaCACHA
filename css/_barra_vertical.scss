@@ -8,6 +8,7 @@
     max-height: 100%;
     padding: 0;
     position: absolute;
+    // overflow: auto;
     a{
         font-family: inherit;
         color: #fff;
@@ -93,6 +94,7 @@
                 color: rgb(242,242,242);
                 padding-left: 40px;
                 transition: transform .01s;
+                white-space: nowrap;
                 &:hover{
                     // color:#3160e2;
                     border-bottom: 1px solid white;

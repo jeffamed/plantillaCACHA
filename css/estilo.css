@@ -123,6 +123,7 @@ body {
   transition: -webkit-transform .01s;
   transition: transform .01s;
   transition: transform .01s, -webkit-transform .01s;
+  white-space: nowrap;
 }
 
 .barra-lateral .menu ul a:hover {
@@ -376,13 +377,9 @@ section .DBServicios {
   background-image: url("../img/datepicker/ui-icons_444444_256x240.png");
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 768px) {
   .barra-lateral {
-    min-height: auto;
-    position: relative;
-  }
-  .ui-datepicker {
-    width: 60%;
+    overflow: auto;
   }
 }
 
@@ -390,6 +387,7 @@ section .DBServicios {
   .barra-lateral {
     min-height: auto;
     position: relative;
+    overflow: initial;
   }
   .barra-lateral .fondo-enlace {
     width: 100%;
@@ -438,6 +436,16 @@ section .DBServicios {
   .barra-lateral .menu a {
     display: inline-block;
     padding: 1.25rem 0.9375rem;
+  }
+  .ui-datepicker {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .barra-lateral {
+    min-height: auto;
+    position: relative;
   }
   .ui-datepicker {
     width: 60%;
