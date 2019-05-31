@@ -1,6 +1,6 @@
 $(function(){
    // captura de pantalla
-   $(window).resize(function(){
+   // $(window).resize(function(){
       var anchop = $(window).width();
       console.log(anchop);
 
@@ -41,7 +41,7 @@ $(function(){
          $("#select-opciones").addClass("mr-1 w-25");
          $("#txtbuscar").addClass("w-50");
       }
-   });
+   // });
 
    // MENU RESPONSIVE
    var boton = $('#btnMenu');
