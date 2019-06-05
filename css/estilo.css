@@ -126,17 +126,19 @@ body {
   color: #595959;
 }
 
-.barrah__encabezado1, .barrah__titulo, .barrah__usuario {
+.barrah__encabezado1, .barrah__titulo {
   margin: auto 0;
 }
 
-.barrah__usuario {
+.usuario {
+  margin: auto 0;
   font-size: 14px;
   color: inherit;
 }
 
 .Salir {
   margin: auto;
+  margin-left: auto;
   color: inherit;
   text-decoration: none;
 }
@@ -157,30 +159,35 @@ body {
   text-decoration: none;
 }
 
-section {
+.notificacion:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-section {
   min-height: 100%;
   width: 100vh;
   padding-top: 10px;
   background: #ecf0f5;
 }
 
-section .contenido {
+.section-contenido {
   background-color: #ffffff;
   -webkit-box-shadow: 2px 2px 10px 0px black;
           box-shadow: 2px 2px 10px 0px black;
 }
 
-section .contenido .contenido-encabezado {
+.contenido__encabezado {
   width: 80vw;
   height: 50px;
   padding: 12px;
 }
 
-section .contenido .contenido-encabezado .titulo {
+.titulo {
   color: white;
 }
 
-section .contenido .contenido-encabezado .btn-new {
+.btn-new {
   width: auto;
   height: 30px;
   padding: 2.5px 15px 10px 15px;
@@ -192,12 +199,12 @@ section .contenido .contenido-encabezado .btn-new {
   border-radius: 2.5px;
 }
 
-section .contenido .contenido-encabezado .btn-new:hover {
+.btn-new:hover {
   text-decoration: none;
   background: #0663b4;
 }
 
-section .contenido .contenido-encabezado select {
+.option-search {
   font-size: 16px;
   color: white;
   height: 30px;
@@ -209,22 +216,22 @@ section .contenido .contenido-encabezado select {
   margin-right: 0px;
 }
 
-section .contenido .contenido-encabezado select:focus {
+.option-search:focus {
   outline: none;
 }
 
-section .contenido .contenido-encabezado select option {
+.option-search option {
   color: #000;
 }
 
-section .contenido .contenido-encabezado label {
+.etiqueta {
   color: #f2f2f2;
   font-size: 16px;
   margin: auto 0px;
   margin-right: 10px;
 }
 
-section .contenido .contenido-encabezado .buscar {
+.buscar {
   font-size: 16px;
   height: 30px;
   border: 0.5px solid #f2f2f2;
@@ -237,11 +244,11 @@ section .contenido .contenido-encabezado .buscar {
   padding-right: 28px;
 }
 
-section .contenido .contenido-encabezado .buscar:focus {
+.buscar:focus {
   outline: none;
 }
 
-section .contenido .contenido-encabezado .icon-buscar {
+.icon-buscar {
   width: 30px;
   height: 30px;
   color: #f2f2f2;
@@ -250,78 +257,77 @@ section .contenido .contenido-encabezado .icon-buscar {
   margin-left: -25px;
 }
 
-section .contenido .cuerpo-contenido {
+.contenido__cuerpo {
   width: 80vw;
   height: auto;
   border-top: 0px solid transparent;
 }
 
-section .contenido .cuerpo-contenido .enc-tabla {
+.contenido__cuerpo .enc-tabla {
   background: white;
 }
 
-section .contenido .cuerpo-contenido th, section .contenido .cuerpo-contenido td {
+.contenido__cuerpo th, .contenido__cuerpo td {
   border: 1px solid #7c7c7c;
   font-size: 14px;
 }
 
-section .contenido .cuerpo-contenido .btn-edit, section .contenido .cuerpo-contenido .btn-eliminar {
-  padding: 5px 15px;
+.boton {
+  padding: 5px 1rem;
   color: #ffffff;
   border-radius: 2.5px;
-}
-
-section .contenido .cuerpo-contenido .btn-edit {
   border: none;
-  background: #ffa600;
 }
 
-section .contenido .cuerpo-contenido .btn-edit:hover {
-  background: #da920d;
+.boton-edit {
+  background: #f2aa0d;
 }
 
-section .contenido .cuerpo-contenido .btn-eliminar {
-  border: none;
+.boton-edit:hover {
+  background: #c2880a;
+}
+
+.boton-eliminar {
   background: #d12424;
 }
 
-section .contenido .cuerpo-contenido .btn-eliminar:hover {
+.boton-eliminar:hover {
   background: #ff0101;
 }
 
-section .contenido .tabla-contenido {
+.tabla-contenido {
   font-size: 15px;
   padding: 10px 10px -5px 10px;
 }
 
-section .contenido .modal-body label {
+.modal-body label {
   color: black;
 }
 
-section .dashboard {
+.dashboard {
   width: 240px;
   height: 15vh;
 }
 
-section .dashboard .dbicon, section .dashboard .dbcontenido {
+.dashboard .dbicon, .dashboard .dbcontenido {
   color: white;
   text-align: center;
 }
 
-section .caja {
+.caja {
   background-color: white;
   padding: 5px;
 }
 
-section .barravr {
+.barravr {
   border-right: 3px solid #ecf0f5;
 }
 
-section .barravl {
+.barravl {
   border-left: 3px solid #ecf0f5;
 }
 
-section .DBServicios {
+.DBServicios {
   height: 5px;
 }
 
@@ -406,6 +412,21 @@ section .DBServicios {
   }
   .ui-datepicker {
     width: 40%;
+  }
+  .notificacion {
+    margin-left: 0.5rem;
+  }
+  .Salir:hover, .Salir:focus {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .boton {
+    padding: 5px 0.5rem;
   }
 }
 

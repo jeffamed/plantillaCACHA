@@ -31,7 +31,7 @@
                             <a href="#" class="notificacion__item dropdown-item"><small>No Pagado <span class="badge badge-pill badge-danger pull-right">1</span></small></a>
                             <a href="#" class="notificacion__item dropdown-item"><small>Cambio Fecha <span class="badge badge-pill badge-danger pull-right">1</span></small></a>
                         </div>
-                    <h6 class="barrah__usuario"><span class="hidden-lg-down">Buenos Dias,</span> Mr. Magnus Cartwright</h6>
+                    <h6 class="usuario"><span class="hidden-lg-down">Buenos Dias,</span> Mr. Magnus Cartwright</h6>
                     <a href="#" class="Salir" data-toggle="tooltip" data-placement="bottom" title="Cerrar Sesión"><i class="fa fa-power-off"></i></a>
                 </div>
             </header>
@@ -45,7 +45,7 @@
             <!-- CERRARA SESION DESDE LA CABECERA -->
                 <div class="bvsubmenu d-flex hidden-md-up">
                     <div class="bvsubmenu__cuerpo d-flex">
-                        <h6 class="bvsubmenu__usuario"><i class="fa fa-user-circle"></i> Mr. Magnus Cartwright</h6>
+                        <h6 class="usuario"><i class="fa fa-user-circle"></i> Mr. Magnus Cartwright</h6>
                         <a href="#" class="notificacion notificacion--barrav" id="notificacion1" data-toggle="dropdown"><i class="fa fa-bell"></i><small> 5</small>   </a>
                         <div class="dropdown-menu" aria-labelledby="notificacion1">
                             <h6 class="dropdown-header"><b>Cobros del Dia</b></h6>
@@ -123,14 +123,14 @@
             </div>
 
             <!-- CONTENIDO-->
-            <section class="col-md-10 col-sm-12 d-flex ml-auto" id="SectionCuerpo">
-                <div class="contenido mt-4 ml-2 mr-4 mb-4" id="contenido">
+            <section class="main-section col-md-10 col-sm-12 d-flex ml-auto" id="SectionCuerpo">
+                <div class="section-contenido mt-4 ml-2 mr-4 mb-4" id="contenido">
                 <!-- ENCABEZADO -->
-                   <div class="contenido-encabezado bg-primary d-flex w-100" id="contenido-enc">
+                   <div class="contenido__encabezado bg-primary d-flex w-100" id="contenido-enc">
                        <h5 class="titulo">Opcion 1</h5>
                     <!-- Boton nuevo -->
                        <button class="btn-new" data-toggle="modal" data-target="#btn-new"><i class="fa fa-plus-circle"></i> Nuevo</button>
-                       <!-- Modal del Nuevo -->
+                        <!-- Modal del Nuevo -->
                         <div class="modal fade" id="btn-new" tabindex="-1" role="dialog" aria-labelledby="btn-new" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -159,22 +159,21 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- buscador -->
-                         <div class="buscador d-flex ml-auto hidden-md-down">
-                             <label for="">Buscar por: </label>
-                             <select name="filtro" id="" class="">
-                                 <option value="nombre">Nombre</option>
-                                 <option value="descripcion">Descripción</option>
-                             </select>
-                            <input type="text" name="buscar" id="buscar" class="buscar" placeholder="Buscar...">
-                            <div class="icon-buscar">
-                                <i class="fa fa-search hidden-md-down"></i>
-                            </div> 
-                         </div>
+                        <!-- buscador -->
+                        <div class="buscador d-flex ml-auto hidden-md-down">
+                            <label for="" class="etiqueta">Buscar por: </label>
+                            <select name="filtro" id="" class="option-search">
+                                <option value="nombre">Nombre</option>
+                                <option value="descripcion">Descripción</option>
+                            </select>
+                        <input type="text" name="buscar" id="buscar" class="buscar" placeholder="Buscar...">
+                        <div class="icon-buscar">
+                            <i class="fa fa-search hidden-md-down"></i>
+                        </div> 
+                        </div>
                    </div>
-
                    <!-- CUERPO -->
-                   <div class="cuerpo-contenido" id="cuerpo-contenido">
+                   <div class="contenido__cuerpo" id="cuerpo-contenido">
                        <div class="table-responsive tabla-contenido">
                            <!-- Buscar  -->
                            <div class="form-inline mt-2 mb-2">
@@ -199,46 +198,46 @@
                                <tbody>
                                    <tr>
                                        <td>
-                                           <button class="btn-edit"><i class="fa fa-pencil"></i></button>
-                                           <button class="btn-eliminar"><i class="fa fa-remove"></i></button>
+                                           <button class="boton boton-edit"><i class="fa fa-pencil"></i></button>
+                                           <button class="boton boton-eliminar"><i class="fa fa-remove"></i></button>
                                         </td>
                                         <td>Lucie Marvin</td>
                                         <td>Trantow Road 39375 Mariah Burgs</td>
                                         <td>Activo</td>
                                     </tr>
                                     <tr>
-                                       <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
+                                       <td><button class="boton boton-edit"><i class="fa fa-pencil"></i></button> <button class="boton boton-eliminar"><i class="fa fa-times"></i></button></td>
                                        <td>Katelyn Grady</td>
                                        <td>Champlin Forges, 07420 Gerardo Parkway</td>
                                        <td>Activo</td>
                                    </tr>
                                    <tr>
-                                       <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
+                                       <td><button class="boton boton-edit"><i class="fa fa-pencil"></i></button> <button class="boton boton-eliminar"><i class="fa fa-times"></i></button></td>
                                        <td>Amanda Kihn</td>
                                        <td>Terry Mountain, 58681 Hackett Greens</td>
                                        <td>Activo</td>
                                    </tr>
                                    
                                    <tr>
-                                       <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
+                                       <td><button class="boton boton-edit"><i class="fa fa-pencil"></i></button> <button class="boton boton-eliminar"><i class="fa fa-times"></i></button></td>
                                        <td>Miss Alejandrin Nikolaus</td>
                                        <td>Bettye Plaza, 6568 Ned Square</td>
                                        <td>Inactivo</td>
                                    </tr>
                                    <tr>
-                                        <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
+                                        <td><button class="boton boton-edit"><i class="fa fa-pencil"></i></button> <button class="boton boton-eliminar"><i class="fa fa-times"></i></button></td>
                                         <td>Emery Sporer IV</td>
                                         <td>Senger Ports, 8047 Gulgowski Estates</td>
                                         <td>Inactivo</td>
                                     </tr>
                                     <tr>
-                                        <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
+                                        <td><button class="boton boton-edit"><i class="fa fa-pencil"></i></button> <button class="boton boton-eliminar"><i class="fa fa-times"></i></button></td>
                                         <td>Cara Brekke</td>
                                         <td>Rathton,1560 Mohr Motorway</td>
                                         <td>Activo</td>
                                     </tr>
                                     <tr>
-                                        <td><button class="btn-edit"><i class="fa fa-pencil"></i></button> <button class="btn-eliminar"><i class="fa fa-times"></i></button></td>
+                                        <td><button class="boton boton-edit"><i class="fa fa-pencil"></i></button> <button class="boton boton-eliminar"><i class="fa fa-times"></i></button></td>
                                         <td>Charity Kohler</td>
                                         <td>Port Ella, 24495 Fahey Centers</td>
                                         <td>Inactivo</td>

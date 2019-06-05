@@ -12,17 +12,19 @@
 }
 
 // Nombre de la pagina
-.barrah__encabezado1, .barrah__titulo, .barrah__usuario{
+.barrah__encabezado1, .barrah__titulo{
     margin: auto 0;
 }
 
-.barrah__usuario{
+.usuario{
+    margin: auto 0;
     font-size: 14px;
     color: inherit;
     // color: rgb(107, 106, 106);
 }
 .Salir{
     margin: auto;
+    margin-left: auto;
     color: inherit;
     text-decoration: none;
     &:hover{
@@ -36,6 +38,10 @@
     text-decoration: none;
     &:hover{
         color: orange;
+        text-decoration: none;
+    }
+    &:focus{
+        color: #fff;
         text-decoration: none;
     }
 }
