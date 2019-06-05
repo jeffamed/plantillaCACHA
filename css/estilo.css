@@ -15,7 +15,7 @@ body {
   font-family: sans-serif, Arial, Helvetica;
 }
 
-.barra-lateral {
+.barrav {
   font-family: Roboto;
   background-image: linear-gradient(-45deg, #599cff, #2c4eac);
   color: #fff;
@@ -23,114 +23,100 @@ body {
   max-height: 100%;
   padding: 0;
   position: absolute;
-  /*      MENU        */
+  overflow: auto;
 }
 
-.barra-lateral a {
-  font-family: inherit;
-  color: #fff;
-}
-
-.barra-lateral .logo {
+.bvencabezado {
   margin: 10px 10px;
   border-bottom: 1px solid white;
   font-family: inherit;
 }
 
-.barra-lateral .logo h6 {
+.bvencabezado__logo {
+  max-width: 45px;
+  max-height: 45px;
+}
+
+.bvencabezado__titulo {
   padding: 15px 0;
   text-align: center;
   font-weight: 500;
   margin: 0;
 }
 
-.barra-lateral .logo img {
-  float: left;
-  max-width: 45px;
-  max-height: 45px;
-}
-
-.barra-lateral .logo a {
+.bvencabezado__menu {
   margin: auto 0px;
   text-decoration: none;
   font-family: inherit;
+  color: inherit;
 }
 
-.barra-lateral .logo a:hover {
-  text-decoration: none;
-  color: #295ef1;
+.bvencabezado__menu:hover, .bvencabezado__menu:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: inherit;
 }
 
-.barra-lateral .menu-second {
+.bvsubmenu {
   margin: .5rem 0rem;
 }
 
-.barra-lateral .menu-second h6 {
+.bvsubmenu__cuerpo {
   margin: auto 0.95rem;
   padding: 0.32rem 0px;
 }
 
-.barra-lateral .menu-second a {
-  margin: auto;
-  text-decoration: none;
-}
-
-.barra-lateral .menu-second a:hover {
-  text-decoration: none;
-  color: #c72222;
-}
-
-.barra-lateral .menu-second .notificacion {
-  margin: auto 0px;
-  color: inherit;
-  text-decoration: none;
-}
-
-.barra-lateral .menu-second .notificacion:hover {
-  color: orange;
-  text-decoration: none;
-}
-
-.barra-lateral .menu-second .dropdown-menu {
+.dropdown-menu {
   margin-left: 10rem;
 }
 
-.barra-lateral .menu a {
+/*      MENU        */
+.bvmenu {
+  color: #fff;
+}
+
+.bvmenu i {
+  margin-right: 5px;
+}
+
+.bvmenu__item {
   display: block;
   width: 100%;
   padding: 1rem;
   font-weight: 500;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   text-decoration: none;
+  color: inherit;
 }
 
-.barra-lateral .menu a:hover {
+.bvmenu__item:hover {
   background: #2c4eac;
-  color: white;
+  color: inherit;
   border: 0.5px solid whitesmoke;
   text-decoration: none;
 }
 
-.barra-lateral .menu a i {
-  margin-right: 10px;
+.bvmenu__item:focus {
+  color: inherit;
+  text-decoration: none;
 }
 
-.barra-lateral .menu ul a {
+.bvmenu__subitem {
+  display: block;
   background: rgba(46, 46, 46, 0.5);
   color: #f2f2f2;
-  padding-left: 40px;
-  -webkit-transition: -webkit-transform .01s;
-  transition: -webkit-transform .01s;
-  transition: transform .01s;
-  transition: transform .01s, -webkit-transform .01s;
+  padding: 10px;
+  padding-left: 1rem;
   white-space: nowrap;
+  text-decoration: none;
 }
 
-.barra-lateral .menu ul a:hover {
-  border-bottom: 1px solid white;
-  border-left: 2px solid white;
+.bvmenu__subitem:hover {
+  color: inherit;
+  border: 1px solid white;
   -webkit-transform: scale(0.99);
           transform: scale(0.99);
+  text-decoration: none;
 }
 
 .barrah {
@@ -140,33 +126,33 @@ body {
   color: #595959;
 }
 
-.barrah .barrah__encabezado1, .barrah .barrah__titulo, .barrah .barrah__usuario {
+.barrah__encabezado1, .barrah__titulo, .barrah__usuario {
   margin: auto 0;
 }
 
-.barrah .barrah__usuario {
+.barrah__usuario {
   font-size: 14px;
   color: inherit;
 }
 
-.barrah .barrah__salir {
-  margin: auto 10px;
+.Salir {
+  margin: auto;
   color: inherit;
   text-decoration: none;
 }
 
-.barrah .barrah__salir:hover {
+.Salir:hover {
   color: #df3434;
   text-decoration: none;
 }
 
-.barrah .barrah__notificacion {
-  margin: auto 0px;
+.notificacion {
+  margin: auto;
   color: inherit;
   text-decoration: none;
 }
 
-.barrah .barrah__notificacion:hover {
+.notificacion:hover {
   color: orange;
   text-decoration: none;
 }
@@ -374,19 +360,13 @@ section .DBServicios {
   background-image: url("../img/datepicker/ui-icons_444444_256x240.png");
 }
 
-@media screen and (min-width: 768px) {
-  .barra-lateral {
-    overflow: auto;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .barra-lateral {
+  .barrav {
     min-height: auto;
     position: relative;
     overflow: initial;
   }
-  .barra-lateral .fondo-enlace {
+  .barrav .fondo-enlace {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -397,10 +377,10 @@ section .DBServicios {
     cursor: pointer;
     display: none;
   }
-  .barra-lateral .fondo-enlace.active {
+  .barrav .fondo-enlace.active {
     display: block;
   }
-  .barra-lateral nav {
+  .barrav .bvmenu {
     width: 60%;
     position: fixed;
     background: rgba(0, 0, 0, 0.95);
@@ -416,11 +396,11 @@ section .DBServicios {
     transition: all .3s ease;
     overflow: scroll;
   }
-  .barra-lateral nav .titulomenu2 {
+  .barrav .bvmenu .bvmenu__titulo {
     border-bottom: 1px solid gray;
     padding: 0.625rem;
   }
-  .barra-lateral nav.active {
+  .barrav .bvmenu.active {
     -webkit-transform: translatex(0%);
             transform: translatex(0%);
   }
@@ -430,9 +410,11 @@ section .DBServicios {
 }
 
 @media screen and (max-width: 575px) {
-  .barra-lateral .menu a {
-    display: inline-block;
-    padding: 1.25rem 0.9375rem;
+  .bvmenu__subitem {
+    display: block;
+    width: 60vw;
+    padding: 0.625rem;
+    padding-left: 1rem;
   }
   .ui-datepicker {
     width: 60%;
@@ -440,9 +422,8 @@ section .DBServicios {
 }
 
 @media screen and (max-width: 576px) {
-  .barra-lateral {
+  .barrav {
     min-height: auto;
-    position: relative;
   }
   .ui-datepicker {
     width: 60%;

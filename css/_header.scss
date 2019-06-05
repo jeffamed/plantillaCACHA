@@ -9,35 +9,36 @@
     // background:linear-gradient(rgb(190, 190, 190),white);
     // position: absolute;
     // z-index: 2;
+}
 
-    // Nombre de la pagina
-    .barrah__encabezado1, .barrah__titulo, .barrah__usuario{
-        margin: auto 0;
-    }
+// Nombre de la pagina
+.barrah__encabezado1, .barrah__titulo, .barrah__usuario{
+    margin: auto 0;
+}
 
-    .barrah__usuario{
-        font-size: 14px;
-        color: inherit;
-        // color: rgb(107, 106, 106);
-    }
-    .barrah__salir{
-        margin: auto 10px;
-        color: inherit;
+.barrah__usuario{
+    font-size: 14px;
+    color: inherit;
+    // color: rgb(107, 106, 106);
+}
+.Salir{
+    margin: auto;
+    color: inherit;
+    text-decoration: none;
+    &:hover{
+        color: rgb(223, 52, 52);
         text-decoration: none;
-        &:hover{
-            color: rgb(223, 52, 52);
-            text-decoration: none;
-        }
     }
-    .barrah__notificacion{
-        margin: auto 0px;
-        color: inherit;
+}
+.notificacion{
+    margin: auto;
+    color: inherit;
+    text-decoration: none;
+    &:hover{
+        color: orange;
         text-decoration: none;
-        &:hover{
-            color: orange;
-            text-decoration: none;
-        }
     }
+}
     // .boxl{
     //     width: 0;
     //     height: 0;
@@ -58,4 +59,3 @@
     //     right: 0px;
     //     background: #ffffff;
     // }
-}

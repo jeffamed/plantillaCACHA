@@ -1,6 +1,6 @@
 @import "color_medida";
 
-.barra-lateral{
+.barrav{
     font-family: Roboto;
     background-image: linear-gradient(-45deg,$azulbajo,$azulenc);
     color: #fff;
@@ -8,101 +8,112 @@
     max-height: 100%;
     padding: 0;
     position: absolute;
-    // overflow: auto;
-    a{
-        font-family: inherit;
-        color: #fff;
+    overflow: auto;
+    // a{
+    //     font-family: inherit;
+    //     color: #fff;
+    // }
+}
+// LOGO
+.bvencabezado{
+    margin: 10px 10px;
+    border-bottom: 1px solid white;
+    font-family: inherit;
+}
+.bvencabezado__logo{
+    // float: left;
+    max-width: 45px;
+    max-height: 45px;
+}
+.bvencabezado__titulo{
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+.bvencabezado__menu{
+    margin: auto 0px;
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    &:hover, &:focus{
+        transform: scale(1.2);
+        // text-decoration: none;
+        color:inherit;
     }
-    // LOGO
-    .logo{
-        margin: 10px 10px;
-        border-bottom: 1px solid white;
-        font-family: inherit;
-        h6{
-            padding: 15px 0;
-            text-align: center;
-            font-weight: 500;
-            margin: 0;
-        }
-        img{
-            float: left;
-            max-width: 45px;
-            max-height: 45px;
-        }
-        a{
-            margin: auto 0px;
-            text-decoration: none;
-            font-family: inherit;
-            &:hover{
-                text-decoration: none;
-                color: #295ef1;
-            }
-        }
-    }
+}
 
-    // segundo menu del panel
+// segundo menu del panel
 
-    .menu-second{
-        margin: .5rem 0rem;
-        h6{
-            margin: auto 0.95rem;
-            padding: 0.32rem 0px;
-        }
-        a{
-            margin: auto;
-            text-decoration: none;
-            &:hover{
-                 text-decoration: none;
-                 color: rgb(199, 34, 34);
-            }
-        }
-        .notificacion{
-            margin: auto 0px;
-            color: inherit;
-            text-decoration: none;
-            &:hover{
-                color: orange;
-                text-decoration: none;
-            }
-        }
-        .dropdown-menu{
-            margin-left: 10rem;
-        }
+.bvsubmenu{
+    margin: .5rem 0rem;
+}
+
+.bvsubmenu__cuerpo{
+    margin: auto 0.95rem;
+    padding: 0.32rem 0px;
+}
+
+// .notificacion--barrav{
+//     margin: auto;
+//     margin-left: 0.5em;
+// }
+// .Salir--bv{
+//     color: #fff;
+//     &:hover{
+//         transform: scale(1.2);
+//         color: #fff;
+//     }
+// }
+.dropdown-menu{
+    margin-left: 10rem;
+}
+
+/*      MENU        */
+.bvmenu{
+    color:#fff;
+    i{
+        margin-right: 5px;
     }
-    /*      MENU        */
-    .menu{
-        a{
-            display: block;
-            width: 100%;
-            padding: 1rem;
-            font-weight: 500;
-            border-bottom: 1px solid rgba(255,255,255,.1);
-            text-decoration: none;
-            &:hover{
-                background: $azulenc;
-                color: white;
-                border:0.5px solid whitesmoke;
-                text-decoration: none;
-            }
-            i{
-                margin-right: 10px;
-            }
-        }
-        ul{
-            a{
-                background: rgba(46,46,46,.5);
-                color: rgb(242,242,242);
-                padding-left: 40px;
-                transition: transform .01s;
-                white-space: nowrap;
-                &:hover{
-                    // color:#3160e2;
-                    border-bottom: 1px solid white;
-                    border-left: 2px solid white;
-                    transform: scale(.99);
-                }
-            }
-        }
+}
+.bvmenu__item{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+        background: $azulenc;
+        color: inherit;
+        border:0.5px solid whitesmoke;
+        text-decoration: none;
+    }
+    &:focus{
+        color: inherit;
+        text-decoration: none;
     }
     
 }
+// ul{
+.bvmenu__subitem{
+    display: block;
+    background: rgba(46,46,46,.5);
+    color: rgb(242,242,242);
+    padding: 10px;
+    padding-left: 1rem;
+    // transition: transform .01s;
+    white-space: nowrap;
+    text-decoration: none;
+    &:hover{
+        color:inherit;
+        border: 1px solid white;
+        // border-left: 2px solid white;
+        transform: scale(.99);
+        text-decoration: none;
+    }
+}
+// }
+
+

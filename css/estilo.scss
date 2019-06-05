@@ -26,14 +26,8 @@ body{
     @import "datepicker";
     
 // media queries
-@media screen and (min-width: 768px){
-    .barra-lateral{
-        overflow: auto;
-    }
-}
-
 @media screen and (max-width: 767px){
-    .barra-lateral{
+    .barrav{
         min-height: auto;
         position: relative;
         overflow: initial;
@@ -54,7 +48,7 @@ body{
             display: block;
         }
 
-        nav{
+        .bvmenu{
             width: 60%;
             position: fixed;
             background: rgba(0,0,0,0.95);
@@ -67,12 +61,12 @@ body{
             transform: translatex(-100%);
             transition: all .3s ease;
             overflow: scroll;
-            .titulomenu2{
+            .bvmenu__titulo{
                 border-bottom: 1px solid gray;
                 padding: 0.625rem;
             }
         }
-        nav.active{
+        .bvmenu.active{
             transform: translatex(0%);
         }
     }
@@ -82,24 +76,22 @@ body{
 }
 
 @media screen and (max-width: 575px){
-
-    .barra-lateral{
-        .menu{
-            a{
-                display: inline-block;
-                padding: 1.25rem 0.9375rem;
-            }
-        }
+    .bvmenu__subitem{
+        display: block;
+        width: 60vw;
+        padding: 0.625rem;
+        padding-left: 1rem;
     }
+
     .ui-datepicker{
         width: 60%;
     }
 }
 
 @media screen and (max-width: $sm){
-    .barra-lateral{
+    .barrav{
         min-height: auto;
-        position: relative;
+        // position: relative;
     }
     .ui-datepicker{
         width: 60%;
