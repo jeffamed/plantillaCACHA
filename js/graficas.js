@@ -1,4 +1,6 @@
   //Barra del Ventas
+  // ctx.fillStyle = 'green';
+  // ctx.fillRect = (0, 0, 400, 200);
    var ctx = document.getElementById('Ventas').getContext('2d');
    var charVentas = new Chart(ctx, {
     type: 'bar',
@@ -27,15 +29,22 @@
        }]
       },
     options:{
-       scales: {
-          yAxes:[{
-             ticks:{
-                beginAtZero: true
-               }
-          }]
-         }
+      responsive: true,
+      maintainAspectRatio: true,
+      // scales: {
+      //    yAxes:[{
+      //       ticks:{
+      //          beginAtZero: true
+      //       }
+      //    }],
+      //    xAxes:[{
+      //       ticks:{
+      //          beginAtZero: true
+      //       }
+      //    }]
+      // }
     }
-   });
+});
 
    //piechart
    var ctx = document.getElementById('Vendedores').getContext('2d');
@@ -64,6 +73,20 @@
      }]
   },
   options:{
+     responsive: true,
+     maintainAspectRatio: true,
+   //   scales:{
+   //    yAxes: [{
+   //       ticks: {
+   //          beginAtZero: true
+   //       }
+   //    }],
+   //    xAxes: [{
+   //       ticks: {
+   //          beginAtZero: true
+   //       }
+   //    }]
+   //   },
      title:{
         display: true,
         position: 'bottom',
@@ -86,6 +109,20 @@ var chart = new Chart(ctx, {
       }]
    },
    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      // scales: {
+      //    yAxes:[{
+      //       ticks:{
+      //          beginAtZero: true
+      //       }
+      //    }],
+      //    xAxes:[{
+      //       ticks:{
+      //          beginAtZero: true
+      //       }
+      //    }]
+      // },
       animation: {
          easing: 'easeInCirc',
          // Onprogress: function(animation) {

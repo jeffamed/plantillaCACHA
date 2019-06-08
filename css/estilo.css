@@ -67,7 +67,7 @@ body {
 }
 
 .dropdown-menu {
-  margin-left: 10rem;
+  margin-left: -1rem;
 }
 
 /*      MENU        */
@@ -160,13 +160,13 @@ body {
 }
 
 .notificacion:focus {
-  color: #fff;
+  color: inherit;
   text-decoration: none;
 }
 
 .main-section {
   min-height: 100%;
-  width: 100vh;
+  width: 100vw;
   padding-top: 10px;
   background: #ecf0f5;
 }
@@ -304,19 +304,31 @@ body {
   color: black;
 }
 
-.dashboard {
-  width: 240px;
-  height: 15vh;
+.section__info {
+  width: 250px;
 }
 
-.dashboard .dbicon, .dashboard .dbcontenido {
+.dashboard {
+  width: auto;
+  height: 15vh;
+  font-size: 1rem;
+}
+
+.dbicon, .dbcontenido {
   color: white;
   text-align: center;
 }
 
 .caja {
+  position: relative;
+  width: 39.5vw;
+  height: auto;
   background-color: white;
-  padding: 5px;
+  padding: 1px;
+}
+
+.caja:nth-child(3) {
+  height: 25%;
 }
 
 .barravr {
@@ -332,7 +344,7 @@ body {
 }
 
 .ui-datepicker {
-  width: 20%;
+  width: 25%;
   background: white;
 }
 
@@ -364,6 +376,33 @@ body {
 
 .ui-datepicker .ui-icon {
   background-image: url("../img/datepicker/ui-icons_444444_256x240.png");
+}
+
+@media screen and (max-width: 1133px) {
+  .ocultar-elemento {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .caja {
+    width: 36vw;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .caja {
+    width: 37vw;
+  }
+  .caja:nth-child(2) {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .boton {
+    padding: 5px 0.6rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -416,11 +455,20 @@ body {
   .notificacion {
     margin-left: 0.5rem;
   }
+  .notificacion:focus {
+    color: #fff;
+  }
   .Salir:hover, .Salir:focus {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
     color: #fff;
     text-decoration: none;
+  }
+  .ocultar-elemento {
+    display: inline !important;
+  }
+  .dropdown-menu {
+    margin-left: 7rem;
   }
 }
 
@@ -448,6 +496,20 @@ body {
   }
   .ui-datepicker {
     width: 60%;
+  }
+  .dashboard .dbcontenido h2, .dashboard .dbcontenido h3, .dashboard .dbcontenido h6 {
+    font-weight: 250;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .dashboard .dbcontenido h6 {
+    font-size: .8rem;
+    font-weight: 400;
+  }
+  .dashboard .dbcontenido h2, .dashboard .dbcontenido h3 {
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

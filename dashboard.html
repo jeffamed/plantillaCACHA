@@ -32,7 +32,7 @@
                             <a href="#" class="notificacion__item dropdown-item"><small>No Pagado <span class="badge badge-pill badge-danger pull-right">1</span></small></a>
                             <a href="#" class="notificacion__item dropdown-item"><small>Cambio Fecha <span class="badge badge-pill badge-danger pull-right">1</span></small></a>
                         </div>
-                    <h6 class="barrah__usuario"><span class="hidden-lg-down">Buenos Dias,</span> Mr. Magnus Cartwright</h6>
+                    <h6 class="usuario"><span class="hidden-lg-down">Buenos Dias,</span> Mr. Magnus Cartwright</h6>
                     <a href="#" class="Salir" data-toggle="tooltip" data-placement="bottom" title="Cerrar Sesión"><i class="fa fa-power-off"></i></a>
                 </div>
             </header>
@@ -40,13 +40,13 @@
             <div class="barrav col-md-2 col-sm-12" id="barra-lateral">
                 <div class="bvencabezado d-flex" id="logo">
                     <img src="img/Firefox_48px.png" alt="logo" class="bvencabezado__logo">
-                    <h6 class="bvencabezado__titulo">Funeraria CACHA</h6>
+                    <h6 class="bvencabezado__titulo"><span class="ocultar-elemento">Funeraria</span> CACHA</h6>
                     <a href="#" class="bvencabezado__menu hidden-md-up mr-3" id="btnMenu"><i class="fa fa-2x fa-bars"></i></a>
                 </div>
             <!-- CERRARA SESION DESDE LA CABECERA -->
                 <div class="bvsubmenu d-flex hidden-md-up">
                     <div class="bvsubmenu__cuerpo d-flex">
-                        <h6 class="bvsubmenu__usuario"><i class="fa fa-user-circle"></i> Mr. Magnus Cartwright</h6>
+                        <h6 class="usuario"><i class="fa fa-user-circle"></i> Mr. Magnus Cartwright</h6>
                         <a href="#" class="notificacion notificacion--barrav" id="notificacion1" data-toggle="dropdown"><i class="fa fa-bell"></i><small> 5</small>   </a>
                         <div class="dropdown-menu" aria-labelledby="notificacion1">
                             <h6 class="dropdown-header"><b>Cobros del Dia</b></h6>
@@ -65,13 +65,13 @@
                     <h5 class="bvmenu__titulo hidden-md-up w-100 d-flex justify-content-center ">MENU</h5>
 
                     <a class="bvmenu__item" href="dashboard.html">
-                        <i class="fa fa-dashboard hidden-md-down"></i>
-                        <i class="fa fa-dashboard hidden-md-up"></i>
+                        <i class="fa fa-dashboard hidden-md-down ocultar-elemento"></i>
+                        <!-- <i class="fa fa-dashboard hidden-md-up"></i> -->
                         Dashboard
                     </a>
                     <a class="bvmenu__item" href="#inicio" id="btnInicio" aria-expanded="false" aria-controls="inicio" data-toggle="collapse">
-                        <i class="fa fa-home hidden-md-down"></i>
-                        <i class="fa fa-home hidden-md-up"></i>
+                        <i class="fa fa-home hidden-md-down ocultar-elemento"></i>
+                        <!-- <i class="fa fa-home hidden-md-up"></i> -->
                         Inicio
                         <i id="flecha_izq" class="fa fa-angle-right pull-right"></i>
                     </a>
@@ -83,8 +83,8 @@
                             </ul>
                         </div>
                     <a class="bvmenu__item" href="#ubicacion" id="btnUbicacion" aria-expanded="false" aria-controls="ubicacion" data-toggle="collapse">
-                        <i class="fa fa-map hidden-md-down"></i>
-                        <i class="fa fa-map hidden-md-up"></i>
+                        <i class="fa fa-map hidden-md-down ocultar-elemento"></i>
+                        <!-- <i class="fa fa-map hidden-md-up"></i> -->
                         Ubicacion
                         <i id="flecha" class="fa fa-angle-right pull-right"></i>
                     </a>
@@ -96,8 +96,8 @@
                             </ul>
                         </div>
                     <a class="bvmenu__item" href="#facturacion" id="btnfacturacion" aria-expanded="false" aria-controls="facturacion" data-toggle="collapse">
-                        <i class="fa fa-book hidden-md-down"></i>
-                        <i class="fa fa-book hidden-md-up"></i>
+                        <i class="fa fa-book hidden-md-down ocultar-elemento"></i>
+                        <!-- <i class="fa fa-book hidden-md-up"></i> -->
                         Facturacion
                         <i id="flecha1" class="fa fa-angle-right pull-right"></i>
                     </a>
@@ -109,13 +109,13 @@
                         </ul>
                     </div>
                     <a class="bvmenu__item" href="#">
-                        <i class="fa fa-users hidden-md-down"></i>
-                        <i class="fa fa-users hidden-md-up"></i>
+                        <i class="fa fa-users hidden-md-down ocultar-elemento"></i>
+                        <!-- <i class="fa fa-users hidden-md-up"></i> -->
                         Empleados
                     </a>
                     <a  class="bvmenu__item" href="#">
-                        <i class="fa fa-question hidden-md-down"></i> 
-                        <i class="fa fa-question hidden-md-up"></i> 
+                        <i class="fa fa-question hidden-md-down ocultar-elemento"></i> 
+                        <!-- <i class="fa fa-question hidden-md-up"></i>  -->
                         Ayuda 
                         <span class="badge badge-danger pull-right">PDF</span>
                     </a>
@@ -127,19 +127,19 @@
             <section class="main-section col-md-10 col-sm-12 d-flex ml-auto">
                 <div class="container">
                     <!-- Etiquetas de informacion -->
-                    <div class="row mb-1">
-                        <div class="col-sm-6 col-md-6 col-lg-3 mb-1">
+                    <div class="row section__cuadros d-flex justify-content-between mb-1">
+                        <div class="section__info col-6 col-md-6 col-lg-3 mb-1">
                             <div class="dashboard bg-success d-flex justify-content-around align-items-center">
                                 <div class="dbicon hidden-sm-down">
                                     <i class="fa fa-4x fa-money"></i>
                                 </div>
                                 <div class="dbcontenido">
-                                    <h3>C$ 33.45</h3>
+                                    <h3>C$33.45</h3>
                                     <h6>Tasa de Cambio</h6>
                                 </div>
                             </div> 
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3 mb-1">
+                        <div class="section__info col-6 col-md-6 col-lg-3 mb-1">
                             <div class="dashboard bg-warning d-flex justify-content-around align-items-center">
                                 <div class="dbicon hidden-sm-down">
                                     <i class="fa fa-4x fa-users"></i>
@@ -150,7 +150,7 @@
                                 </div>
                             </div> 
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3 mb-1">
+                        <div class="section__info col-6 col-md-6 col-lg-3 mb-1">
                             <div class="dashboard bg-info d-flex justify-content-around align-items-center">
                                 <div class="dbicon hidden-sm-down">
                                     <i class="fa fa-4x fa-street-view"></i>
@@ -161,7 +161,7 @@
                                 </div>
                             </div> 
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3 mb-1">
+                        <div class="section__info col-6 col-md-6 col-lg-3 mb-1">
                             <div class="dashboard bg-danger d-flex justify-content-around align-items-center">
                                 <div class="dbicon hidden-sm-down">
                                     <i class="fa fa-4x fa-cart-plus"></i>
@@ -174,17 +174,15 @@
                         </div>
                     </div>
                     <!-- Graficos de Linea -->
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6 caja barravr">
+                    <div class="row d-flex justify-content-between">
+                         <div class="caja col-12 mb-1 col-md-auto">
                             <canvas id="Ventas"></canvas>
                         </div>
-                        <div class="col-sm-12 col-md-6 caja barravl">
+                        <div class="caja col-12 mb-1 col-md-auto"> 
                             <canvas id="Vendedores"></canvas>
                         </div>                       
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 mt-1 caja">
-                            <canvas id="Servicios" height="50"></canvas>
+                        <div class="caja col-12 md-auto">
+                            <canvas id="Servicios" height="55"></canvas>
                         </div>
                     </div>
                 </div>
@@ -197,7 +195,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/Chart.min.js"></script>
     <script src="js/jquery.tablesorter.min.js"></script>
-    <!-- <script src="js/jquery-ui.js"></script> -->
+    <script src="js/resolucion.js"></script>
     <script src="js/application.js"></script>
     <script src="js/graficas.js"></script>
 </body>

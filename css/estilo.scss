@@ -26,6 +26,32 @@ body{
     @import "datepicker";
     
 // media queries
+@media screen and (max-width:1133px){
+    .ocultar-elemento{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .caja{
+        width: 36vw;
+    }
+}
+@media screen and (max-width: 920px){
+    .caja{
+        width: 37vw;
+        &:nth-child(2){
+            width: 40vw;
+        }
+    }
+}
+
+@media screen and (max-width:799px){
+    .boton{
+        padding: 5px 0.6rem;
+    }
+}
+
 @media screen and (max-width: 767px){
     .barrav{
         min-height: auto;
@@ -75,6 +101,9 @@ body{
     }
     .notificacion{
         margin-left: 0.5rem;
+        &:focus{
+            color: #fff;
+        }
     }
     .Salir{
         &:hover, &:focus{
@@ -82,6 +111,14 @@ body{
             color: #fff;
             text-decoration: none;
         }
+    }
+
+    .ocultar-elemento{
+        display: inline !important;
+    }
+
+    .dropdown-menu{
+        margin-left: 7rem;
     }
 }
 
@@ -111,5 +148,27 @@ body{
     }
     .ui-datepicker{
         width: 60%;
+    }
+    .dashboard{
+        .dbcontenido{
+            h2, h3, h6{
+                font-weight: 250;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 400px){
+    .dashboard{
+        .dbcontenido{
+            h6{
+                font-size: .8rem;
+                font-weight: 400;
+            }
+            h2, h3{
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
     }
 }
