@@ -111,7 +111,7 @@ body {
   text-decoration: none;
 }
 
-.bvmenu__subitem:hover {
+.bvmenu__subitem:hover, .bvmenu__subitem:focus {
   color: inherit;
   border: 1px solid white;
   -webkit-transform: scale(0.99);

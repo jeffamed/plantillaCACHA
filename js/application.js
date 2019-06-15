@@ -59,42 +59,51 @@ $(function(){
       e.preventDefault();
    });
 
+   // COLOR ROJO DE LAS LETRAS EN LA TABLA
+   $("table td:nth-child(4):contains('Inactivo')").parents("tr").css("color","#e4605e");
+
 });
 
 $(document).ready(function(){
 
    // botones de despliegue 
    $("#btnInicio").click(function(){
-      if($("#flecha_izq").hasClass("fa-angle-right")){
+      $("#flecha_izq").toggleClass("fa-angle-down");
+      // if($("#flecha_izq").hasClass("fa-angle-right")){
 
-         $("#flecha_izq").removeClass("fa-angle-right pull-right");
-         $("#flecha_izq").addClass("fa-angle-down pull-right");
-      }else{
-         $("#flecha_izq").removeClass("fa-angle-down pull-right");
-         $("#flecha_izq").addClass("fa-angle-right pull-right");
-      }
+      //    $("#flecha_izq").removeClass("fa-angle-right pull-right");
+      //    $("#flecha_izq").addClass("fa-angle-down pull-right");
+      // }else{
+      //    $("#flecha_izq").removeClass("fa-angle-down pull-right");
+      //    $("#flecha_izq").addClass("fa-angle-right pull-right");
+      // }
    });
    $("#btnUbicacion").click(function(){
-      if($("#flecha").hasClass("fa-angle-right")){
+      $("#flecha").toggleClass("fa-angle-down");
+      // if($("#flecha").hasClass("fa-angle-right")){
 
-         $("#flecha").removeClass("fa-angle-right pull-right");
-         $("#flecha").addClass("fa-angle-down pull-right");
-      }else{
-         $("#flecha").removeClass("fa-angle-down pull-right");
-         $("#flecha").addClass("fa-angle-right pull-right");
-      }
+      //    $("#flecha").removeClass("fa-angle-right pull-right");
+      //    $("#flecha").addClass("fa-angle-down pull-right");
+      // }else{
+      //    $("#flecha").removeClass("fa-angle-down pull-right");
+      //    $("#flecha").addClass("fa-angle-right pull-right");
+      // }
    });
    $("#btnfacturacion").click(function(){
-      if($("#flecha1").hasClass("fa-angle-right")){
+      $("#flecha1").toggleClass("fa-angle-down");
+      // if($("#flecha1").hasClass("fa-angle-right")){
 
-         $("#flecha1").removeClass("fa-angle-right pull-right");
-         $("#flecha1").addClass("fa-angle-down pull-right");
-      }else{
-         $("#flecha1").removeClass("fa-angle-down pull-right");
-         $("#flecha1").addClass("fa-angle-right pull-right");
-      }
+      //    $("#flecha1").removeClass("fa-angle-right pull-right");
+      //    $("#flecha1").addClass("fa-angle-down pull-right");
+      // }else{
+      //    $("#flecha1").removeClass("fa-angle-down pull-right");
+      //    $("#flecha1").addClass("fa-angle-right pull-right");
+      // }
    });
-   
+
+   $("#btnInicio").click(function(){
+      // $("#inicio").toggleClass("show");
+   });
    // Tabla ordernar tabla
    // $('#tabla').DataTable();  
    $("#tabla").tablesorter();
@@ -127,6 +136,10 @@ $(document).ready(function(){
    
    $.datepicker.setDefaults($.datepicker.regional['es']);
    $("#dpFecha").datepicker({
+      dateFormat: 'dd/mm/yy',
+   }
+   );
+   $("#dpFecha1").datepicker({
       dateFormat: 'dd/mm/yy',
    }
    );

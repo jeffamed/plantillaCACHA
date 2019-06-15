@@ -75,7 +75,17 @@
     i{
         margin-right: 5px;
     }
+
 }
+// .collapse1{
+//     transition: all .3s ease;
+//     display: none;
+// }
+// .show{
+//     transition: all .3s ease;
+//     display: block;
+//     background: red;
+// }
 .bvmenu__item{
     display: block;
     width: 100%;
@@ -106,7 +116,7 @@
     // transition: transform .01s;
     white-space: nowrap;
     text-decoration: none;
-    &:hover{
+    &:hover, &:focus{
         color:inherit;
         border: 1px solid white;
         // border-left: 2px solid white;
