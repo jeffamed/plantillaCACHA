@@ -101,6 +101,17 @@ body {
   text-decoration: none;
 }
 
+.desplegar {
+  height: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  overflow: hidden;
+}
+
+.mostrarSub {
+  height: 9.5em;
+}
+
 .bvmenu__subitem {
   display: block;
   background: rgba(46, 46, 46, 0.5);
