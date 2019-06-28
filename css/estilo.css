@@ -298,6 +298,14 @@ body {
   background: #c2880a;
 }
 
+.boton-activar {
+  background: #29a33d;
+}
+
+.boton-activar:hover {
+  background: #40bf55;
+}
+
 .boton-eliminar {
   background: #d12424;
 }
@@ -521,6 +529,9 @@ body {
   .dashboard .dbcontenido h2, .dashboard .dbcontenido h3 {
     font-size: 1rem;
     font-weight: 400;
+  }
+  .titulo {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

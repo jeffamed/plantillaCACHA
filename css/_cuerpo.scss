@@ -115,6 +115,12 @@
         background: hsl(41,90%,40%);
     }
 }
+.boton-activar{
+    background: hsl(130, 60, 40);
+    &:hover{
+        background: hsl(130, 50, 50);
+    }
+}
 .boton-eliminar{
     background: rgb(209, 36, 36);
     &:hover{
