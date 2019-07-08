@@ -284,7 +284,7 @@ body {
 }
 
 .boton {
-  padding: 5px 1rem;
+  padding: 4.5px .9rem;
   color: #ffffff;
   border-radius: 2.5px;
   border: none;
@@ -312,6 +312,14 @@ body {
 
 .boton-eliminar:hover {
   background: #ff0101;
+}
+
+.boton-mirar {
+  background: #cccccc;
+}
+
+.boton-mirar:hover {
+  background: #999999;
 }
 
 .tabla-contenido {
@@ -397,6 +405,12 @@ body {
   background-image: url("../img/datepicker/ui-icons_444444_256x240.png");
 }
 
+@media screen and (max-width: 1200px) {
+  .boton {
+    padding: 4.5px .55rem;
+  }
+}
+
 @media screen and (max-width: 1133px) {
   .ocultar-elemento {
     display: none;
@@ -415,12 +429,6 @@ body {
   }
   .caja:nth-child(2) {
     width: 40vw;
-  }
-}
-
-@media screen and (max-width: 799px) {
-  .boton {
-    padding: 5px 0.6rem;
   }
 }
 
@@ -493,7 +501,7 @@ body {
 
 @media screen and (max-width: 665px) {
   .boton {
-    padding: 5px 0.5rem;
+    padding: 4.5px 0.5rem;
   }
 }
 
@@ -519,6 +527,9 @@ body {
   .dashboard .dbcontenido h2, .dashboard .dbcontenido h3, .dashboard .dbcontenido h6 {
     font-weight: 250;
   }
+  .titulo {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-height: 400px) {
@@ -529,9 +540,6 @@ body {
   .dashboard .dbcontenido h2, .dashboard .dbcontenido h3 {
     font-size: 1rem;
     font-weight: 400;
-  }
-  .titulo {
-    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

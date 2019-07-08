@@ -104,15 +104,15 @@
    
 }
 .boton{
-    padding: 5px 1rem;
+    padding: 4.5px .9rem;
     color: #ffffff;
     border-radius: 2.5px;
     border: none;
 }
 .boton-edit{
-    background: hsl(41,90%,50%);
+    background: hsl(41,90,50);
     &:hover{
-        background: hsl(41,90%,40%);
+        background: hsl(41,90,40);
     }
 }
 .boton-activar{
@@ -125,6 +125,12 @@
     background: rgb(209, 36, 36);
     &:hover{
         background: rgb(255, 1, 1);
+    }
+}
+.boton-mirar{
+    background: hsl(0, 0, 80);
+    &:hover{
+        background: hsl(0, 0, 60);
     }
 }
 .tabla-contenido{
