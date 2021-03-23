@@ -4,8 +4,9 @@
     font-family: Roboto;
     background-image: linear-gradient(-45deg,$azulbajo,$azulenc);
     color: #fff;
-    min-height: 100vh;
-    max-height: 100%;
+    height: 100vh;
+    min-height: 100%;
+    // max-height: 100vh;
     padding: 0;
     position: absolute;
     overflow: auto;
